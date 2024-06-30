@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import HomeButtons from "./home-buttons";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       >
         Hello Im Hossein
       </motion.p>
+      <HomeButtons />
     </div>
   );
 };
