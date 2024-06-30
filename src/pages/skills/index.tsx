@@ -1,11 +1,12 @@
+import { Element } from "react-scroll";
 import Container from "../../components/container";
 
 const Skills = () => {
   return (
-    <Container>
-      <div className="h-full w-full">
+    <Container scrollTarget="skills">
+      <Element name="skills" className="h-full w-full">
         <p className="title">Skills</p>
-      </div>
+      </Element>
     </Container>
   );
 };
