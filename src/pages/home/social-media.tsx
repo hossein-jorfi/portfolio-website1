@@ -1,17 +1,19 @@
+// assets
 import GitHubIcon from "../../assets/social-media/github.svg?react";
 import LinkedinIcon from "../../assets/social-media/linkedin.svg?react";
 import TelegramIcon from "../../assets/social-media/telegram.svg?react";
 
-const icon_size = {
-  width: 24,
-  height: 24,
+const icon_props = {
+  width: 34,
+  height: 34,
+  fill: "#b292ff",
 };
 const SocialMedia = () => {
   return (
     <div>
-      <GitHubIcon {...icon_size} />
-      <LinkedinIcon {...icon_size} />
-      <TelegramIcon {...icon_size} />
+      <GitHubIcon {...icon_props} />
+      <LinkedinIcon {...icon_props} />
+      <TelegramIcon {...icon_props} />
     </div>
   );
 };
