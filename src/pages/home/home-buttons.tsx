@@ -1,20 +1,12 @@
 import ButtonType1 from "../../components/button-type1";
+import { ScrollToElement } from "../../utils/scroll-to";
 
 const HomeButtons = () => {
   return (
     <div className="flex gap-4">
       <ButtonType1>Download CV</ButtonType1>
       <DividerLine />
-      <ButtonType1
-      onClick={() => {
-        const element = document.getElementById('skills')
-        element?.scrollIntoView({
-          behavior: 'smooth'
-        })
-      }}
-      >
-        Skills
-      </ButtonType1>
+      <ButtonType1 onClick={() => ScrollToElement('skills')}>Skills</ButtonType1>
       <ButtonType1>About</ButtonType1>
       <ButtonType1>Exprereince</ButtonType1>
     </div>
