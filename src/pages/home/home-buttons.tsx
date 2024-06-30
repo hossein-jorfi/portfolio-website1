@@ -1,5 +1,12 @@
+import ButtonType1 from "../../components/button-type1";
+
 const HomeButtons = () => {
-  return <div className="text-white text-9xl">home-buttons</div>;
+  return (
+    <div className="flex gap-4">
+      <ButtonType1>Download CV</ButtonType1>
+      <ButtonType1>Skills</ButtonType1>
+    </div>
+  );
 };
 
 export default HomeButtons;

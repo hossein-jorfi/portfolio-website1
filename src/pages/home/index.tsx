@@ -3,7 +3,7 @@ import HomeButtons from "./home-buttons";
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-6">
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
