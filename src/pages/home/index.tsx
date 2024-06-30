@@ -8,7 +8,7 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         // whileInView={{ opacity: 1 }}
-        className="text-white text-9xl"
+        className="text-primary text-9xl"
       >
         Hello Im Hossein
       </motion.p>

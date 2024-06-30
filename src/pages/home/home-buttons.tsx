@@ -4,6 +4,7 @@ const HomeButtons = () => {
   return (
     <div className="flex gap-4">
       <ButtonType1>Download CV</ButtonType1>
+      <DividerLine />
       <ButtonType1>Skills</ButtonType1>
       <ButtonType1>Exprereince</ButtonType1>
     </div>
@@ -11,3 +12,5 @@ const HomeButtons = () => {
 };
 
 export default HomeButtons;
+
+const DividerLine = () => <div className="w-[2px] rounded-lg bg-primary"></div>;

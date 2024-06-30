@@ -7,7 +7,7 @@ type ButtonType1Props = {
 
 const ButtonType1 = ({ children }: ButtonType1Props) => {
   return (
-    <motion.button className="border-2 p-3 rounded-2xl text-white text-lg">
+    <motion.button className="border-2 p-3 rounded-2xl text-primary text-lg">
       {children}
     </motion.button>
   );
