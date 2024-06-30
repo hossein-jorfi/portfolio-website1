@@ -6,6 +6,7 @@ const HomeButtons = () => {
       <ButtonType1>Download CV</ButtonType1>
       <DividerLine />
       <ButtonType1>Skills</ButtonType1>
+      <ButtonType1>About</ButtonType1>
       <ButtonType1>Exprereince</ButtonType1>
     </div>
   );
@@ -13,4 +14,4 @@ const HomeButtons = () => {
 
 export default HomeButtons;
 
-const DividerLine = () => <div className="w-[2px] rounded-lg bg-primary"></div>;
+const DividerLine = () => <div className="w-[2px] rounded-lg bg-primary mx-2"></div>;
