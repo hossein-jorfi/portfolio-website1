@@ -5,6 +5,7 @@ const HomeButtons = () => {
     <div className="flex gap-4">
       <ButtonType1>Download CV</ButtonType1>
       <ButtonType1>Skills</ButtonType1>
+      <ButtonType1>Exprereince</ButtonType1>
     </div>
   );
 };
