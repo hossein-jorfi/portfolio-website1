@@ -5,7 +5,7 @@ import Container from "../../components/container";
 
 const Home = () => {
   return (
-    <Container>
+    <Container scrollTarget="home"> 
       <div className="flex flex-col justify-center gap-6 h-full">
         <SocialMedia />
         <Title />
