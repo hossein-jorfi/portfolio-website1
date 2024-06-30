@@ -4,10 +4,12 @@ import SocialMedia from "./social-media";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-6">
-      <SocialMedia />
-      <Title />
-      <HomeButtons />
+    <div className="flex justify-center h-4/5">
+      <div className="flex flex-col justify-center gap-6 h-full">
+        <SocialMedia />
+        <Title />
+        <HomeButtons />
+      </div>
     </div>
   );
 };

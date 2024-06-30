@@ -10,10 +10,10 @@ const icon_props = {
 };
 const SocialMedia = () => {
   return (
-    <div>
-      <GitHubIcon {...icon_props} />
+    <div className="flex items-center gap-2">
       <LinkedinIcon {...icon_props} />
       <TelegramIcon {...icon_props} />
+      <GitHubIcon {...icon_props} />
     </div>
   );
 };

@@ -8,6 +8,6 @@
   }
 
   .main_paper {
-    @apply bg-[#0D0D0E] flex justify-center items-center w-full h-full rounded-3xl;
+    @apply bg-[#0D0D0E] w-full h-full rounded-3xl;
   }
 }
