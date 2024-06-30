@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { Element } from "react-scroll";
 
 const Container = ({
   children,
@@ -9,12 +8,12 @@ const Container = ({
   scrollTarget?: string;
 }) => {
   return (
-    <Element
-      name={scrollTarget}
+    <div
+      id={scrollTarget}
       className="flex justify-center h-full container p-10"
     >
       {children}
-    </Element>
+    </div>
   );
 };
 
