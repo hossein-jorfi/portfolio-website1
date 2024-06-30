@@ -6,17 +6,21 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-6">
       <SocialMedia />
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        // whileInView={{ opacity: 1 }}
-        className="text-primary text-9xl"
-      >
-        Hello Im Hossein
-      </motion.p>
+      <Title />
       <HomeButtons />
     </div>
   );
 };
 
 export default Home;
+
+const Title = () => (
+  <motion.p
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    // whileInView={{ opacity: 1 }}
+    className="text-primary text-9xl"
+  >
+    Hello Im Hossein
+  </motion.p>
+);
