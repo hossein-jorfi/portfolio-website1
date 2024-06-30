@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#fff'
-      }
+        primary: "#fff",
+      },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

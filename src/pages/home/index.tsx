@@ -6,9 +6,11 @@ import Container from "../../components/container";
 const Home = () => {
   return (
     <Container>
-      <SocialMedia />
-      <Title />
-      <HomeButtons />
+      <div className="flex flex-col justify-center gap-6 h-full">
+        <SocialMedia />
+        <Title />
+        <HomeButtons />
+      </div>
     </Container>
   );
 };
