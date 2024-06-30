@@ -13,7 +13,7 @@ const SocialMedia = () => {
     <div className="flex items-center gap-2">
       <LinkedinIcon {...icon_props} />
       <TelegramIcon {...icon_props} />
-      <GitHubIcon {...icon_props} />
+      <GitHubIcon {...icon_props} width={39} height={39} />
     </div>
   );
 };
