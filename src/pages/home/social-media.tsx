@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
-// components
+// utils
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // assets
 import GitHubIcon from "../../assets/social-media/github.svg?react";
@@ -38,8 +39,10 @@ const IconWrapper = ({
   path: string;
 }) => {
   return (
-    <Link target="_blank" to={path}>
-      {children}
-    </Link>
+    <motion.div whileTap={{ scale: 0.85 }} whileHover={{ scale: 1.1 }}>
+      <Link target="_blank" to={path}>
+        {children}
+      </Link>
+    </motion.div>
   );
 };
