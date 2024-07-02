@@ -8,14 +8,16 @@ import Skill from "./skill";
 const Skills = () => {
   return (
     <Container scrollTarget="skills">
-      <div className="w-full h-full">
-        <p className="title">Skills</p>
-      </div>
+      <div className="flex flex-col w-full gap-5">
+        <div className="w-full ">
+          <p className="title">Skills</p>
+        </div>
 
-      <div>
-        {SKILLS.map((skill) => (
-          <Skill {...skill} />
-        ))}
+        <div className="px-5">
+          {SKILLS.map((skill) => (
+            <Skill {...skill} />
+          ))}
+        </div>
       </div>
     </Container>
   );
