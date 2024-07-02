@@ -14,6 +14,12 @@ const ButtonType1 = ({
 }: ButtonType1Props) => {
   return (
     <motion.button
+      whileHover={{ paddingRight: '30px', paddingLeft: '30px' }}
+      whileTap={{
+        scale: 0.8,
+        // rotate: -90,
+        // borderRadius: "100%",
+      }}
       onClick={onClick}
       className={`border-2 p-3 rounded-2xl text-primary text-lg ${className}`}
     >
