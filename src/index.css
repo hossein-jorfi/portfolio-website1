@@ -4,7 +4,7 @@
 
 @layer components {
   .main_bg {
-    @apply h-screen bg-[#B292FF] p-3;
+    @apply h-screen bg-purple p-3;
   }
 
   .main_paper {
