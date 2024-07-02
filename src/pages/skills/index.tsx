@@ -13,7 +13,7 @@ const Skills = () => {
           <p className="title">Skills</p>
         </div>
 
-        <div className="px-5">
+        <div className="grid grid-cols-4 gap-5">
           {SKILLS.map((skill) => (
             <Skill {...skill} />
           ))}
