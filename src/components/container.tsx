@@ -10,7 +10,7 @@ const Container = ({
   return (
     <div
       id={scrollTarget}
-      className="flex justify-center h-full container p-10"
+      className="flex justify-center h-full xl:container py-10 px-5"
     >
       {children}
     </div>
