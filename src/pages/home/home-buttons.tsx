@@ -9,9 +9,9 @@ const HomeButtons = () => {
     <div className="flex gap-4">
       <ButtonType1>Download CV</ButtonType1>
       <DividerLine />
-      <ButtonType1>
-        <Link to="skills">Skills</Link>
-      </ButtonType1>
+      <Link to="skills">
+        <ButtonType1>Skills</ButtonType1>
+      </Link>
       <ButtonType1>About</ButtonType1>
       <ButtonType1>Exprereince</ButtonType1>
     </div>
