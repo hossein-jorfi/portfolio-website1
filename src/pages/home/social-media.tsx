@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 // components
 import { Link } from "react-router-dom";
 
@@ -14,17 +15,31 @@ const icon_props = {
 const SocialMedia = () => {
   return (
     <div className="flex items-center gap-2">
-      <Link target="_blank" to="https://www.linkedin.com/in/hosseinjorfi/">
+      <IconWrapper path="https://www.linkedin.com/in/hosseinjorfi/">
         <LinkedinIcon {...icon_props} />
-      </Link>
-      <Link target="_blank" to="https://t.me/hosseinjorfi">
+      </IconWrapper>
+      <IconWrapper path="https://t.me/hosseinjorfi">
         <TelegramIcon {...icon_props} />
-      </Link>
-      <Link target="_blank" to="https://github.com/hossein-jorfi">
+      </IconWrapper>
+      <IconWrapper path="https://github.com/hossein-jorfi">
         <GitHubIcon {...icon_props} width={39} height={39} />
-      </Link>
+      </IconWrapper>
     </div>
   );
 };
 
 export default SocialMedia;
+
+const IconWrapper = ({
+  path,
+  children,
+}: {
+  children: ReactNode;
+  path: string;
+}) => {
+  return (
+    <Link target="_blank" to={path}>
+      {children}
+    </Link>
+  );
+};
