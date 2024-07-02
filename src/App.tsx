@@ -1,13 +1,12 @@
 // components
-import Home from "./pages/home";
-import Skills from "./pages/skills";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 function App() {
   return (
     <div className="main_bg">
       <div className="main_paper">
-        <Home />
-        <Skills />
+        <RouterProvider router={router} />
       </div>
     </div>
   );
