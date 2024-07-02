@@ -1,3 +1,6 @@
+// components
+import { Link } from "react-router-dom";
+
 // assets
 import GitHubIcon from "../../assets/social-media/github.svg?react";
 import LinkedinIcon from "../../assets/social-media/linkedin.svg?react";
@@ -11,9 +14,15 @@ const icon_props = {
 const SocialMedia = () => {
   return (
     <div className="flex items-center gap-2">
-      <LinkedinIcon {...icon_props} />
-      <TelegramIcon {...icon_props} />
-      <GitHubIcon {...icon_props} width={39} height={39} />
+      <Link target="_blank" to="https://www.linkedin.com/in/hosseinjorfi/">
+        <LinkedinIcon {...icon_props} />
+      </Link>
+      <Link target="_blank" to="https://t.me/hosseinjorfi">
+        <TelegramIcon {...icon_props} />
+      </Link>
+      <Link target="_blank" to="https://github.com/hossein-jorfi">
+        <GitHubIcon {...icon_props} width={39} height={39} />
+      </Link>
     </div>
   );
 };
