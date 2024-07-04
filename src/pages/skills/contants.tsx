@@ -1,4 +1,4 @@
-import { HTMLContetnt } from "./skill-contents";
+import { HTMLContetnt } from "./skill-contents/html-content";
 
 export const SKILLS = [
   {
