@@ -1,7 +1,10 @@
+import { HTMLContetnt } from "./skill-contents/html-content";
+
 export const SKILLS = [
   {
     id: 0,
     title: "HTML",
+    content: <HTMLContetnt />
   },
   {
     id: 1,

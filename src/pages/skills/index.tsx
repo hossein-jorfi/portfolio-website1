@@ -1,34 +1,5 @@
 // constants
-// import { SKILLS } from "./contants";
-const SKILLS = [
-  {
-    id: 0,
-    title: "HTML",
-  },
-  {
-    id: 1,
-    title: "CSS",
-  },
-  {
-    id: 2,
-    title: "Javascript",
-  },
-  {
-    id: 3,
-    title: "Typescript",
-  },
-  {
-    id: 5,
-    title: "React.js",
-  },
-  {
-    id: 6,
-    title: "Next.js",
-  },
-];
-
-// utils
-import { motion } from "framer-motion";
+import { SKILLS } from "./contants";
 
 // components
 import Container from "../../components/container";
@@ -45,20 +16,7 @@ const Skills = () => {
         <div className="grid grid-cols-4 gap-5">
           {SKILLS.map((skill) => (
             <Skill key={skill.id} {...skill}>
-              {"<h1>Hello World</h1>".split("").map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.25,
-                    delay: i / 10,
-                  }}
-                  key={i}
-                  className="text-3xl"
-                >
-                  {el}
-                </motion.span>
-              ))}
+              {skill.content}
             </Skill>
           ))}
         </div>
