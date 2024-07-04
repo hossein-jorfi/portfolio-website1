@@ -5,7 +5,10 @@ import styles from "./typescript-content.module.scss";
 const TypeScriptContetnt = () => {
   return (
     <div className="text-2xl">
-      <p>let name = "Hossein"</p>
+      <p>
+        <ElemVarLet>let</ElemVarLet> <ElemVarName>name</ElemVarName>{" "}
+        <ElemEqual>=</ElemEqual> <ElemString>"Hossein"</ElemString>
+      </p>
       <p>
         <ErrorUnderLine>name</ErrorUnderLine> = 10
       </p>
@@ -17,6 +20,8 @@ export default TypeScriptContetnt;
 
 const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
   const [showTooltip, setShowTooltip] = useState(false);
+//   let name = "hossein";
+//   name = 10;
   return (
     <span className="relative w-fit">
       <span className="z-10">{children}</span>
@@ -41,3 +46,19 @@ const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
     </span>
   );
 };
+
+const ElemVarName = ({ children }: { children: ReactNode }) => (
+  <span className="text-red-400">{children}</span>
+);
+const ElemVarLet = ({ children }: { children: ReactNode }) => (
+  <span className="text-[#9572ff]">{children}</span>
+);
+const ElemEqual = ({ children }: { children: ReactNode }) => (
+  <span className="text-[#0ad2ff]">{children}</span>
+);
+const ElemString = ({ children }: { children: ReactNode }) => (
+  <span className="text-lime-300">{children}</span>
+);
+const ElemNumber = ({ children }: { children: ReactNode }) => (
+  <span className="text-orange-300">{children}</span>
+);
