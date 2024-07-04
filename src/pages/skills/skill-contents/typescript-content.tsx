@@ -16,9 +16,6 @@ const TypeScriptContetnt = () => {
 export default TypeScriptContetnt;
 
 const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
-  //     let name = "hossein";
-  //     name = 10;
-  //     console.log(name);
   const [showTooltip, setShowTooltip] = useState(false);
   return (
     <span className="relative w-fit">
