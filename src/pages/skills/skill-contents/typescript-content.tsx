@@ -1,45 +1,30 @@
+import { ReactNode } from "react";
 // styles
 import styles from "./typescript-content.module.scss";
 
-// import { motion } from "framer-motion";
-import { ReactNode } from "react";
-
 const TypeScriptContetnt = () => {
-//     let name = 'hossein'
-//     name = 10
-//     console.log(name)
   return (
     <div className="text-2xl">
-      {/* {"const name = 'Hossein'".split("").map((el, i) => (
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.25,
-            delay: i / 10,
-          }}
-          key={i}
-          className="text-2xl"
-        >
-          {el}
-        </motion.span>
-      ))} */}
       <p>let name = "Hossein"</p>
       <p>
         <ErrorUnderLine>name</ErrorUnderLine> = 10
       </p>
-      {/* <p>ts: </p> */}
     </div>
   );
 };
 
 export default TypeScriptContetnt;
 
-const ErrorUnderLine = ({ children }: { children: ReactNode }) => (
-  <span className="relative w-fit">
-    <span className="z-10">{children}</span>
-    <span className="w-full absolute left-0 -bottom-1">
-      <span className={styles.zigzag} />
+const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
+  //   let name = "hossein";
+  //   name = 10;
+  //   console.log(name);
+  return (
+    <span className="relative w-fit">
+      <span className="z-10">{children}</span>
+      <span className="w-full absolute left-0 -bottom-1">
+        <span className={styles.zigzag} />
+      </span>
     </span>
-  </span>
-);
+  );
+};
