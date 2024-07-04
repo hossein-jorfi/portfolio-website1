@@ -16,9 +16,9 @@ const TypeScriptContetnt = () => {
 export default TypeScriptContetnt;
 
 const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
-  //   let name = "hossein";
-  //   name = 10;
-  //   console.log(name);
+  //     let name = "hossein";
+  //     name = 10;
+  //     console.log(name);
   const [showTooltip, setShowTooltip] = useState(false);
   return (
     <span className="relative w-fit">
@@ -35,9 +35,9 @@ const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
         <span
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
-          className="w-32 border-2 absolute left-0 -bottom-12"
+          className="w-44 border-2 rounded-xl p-2 absolute left-0 top-10 bg-[#191f2b] text-xl"
         >
-          Hello World
+          Type 'number' is not assignable to type 'string' .ts(2322)
         </span>
       )}
     </span>
