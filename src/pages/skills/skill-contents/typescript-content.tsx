@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const HTMLContetnt = () =>
+const TypeScriptContetnt = () =>
   "<h1>Hello World</h1>".split("").map((el, i) => (
     <motion.span
       initial={{ opacity: 0 }}
@@ -16,4 +16,4 @@ const HTMLContetnt = () =>
     </motion.span>
   ));
 
-export default HTMLContetnt;
+export default TypeScriptContetnt;

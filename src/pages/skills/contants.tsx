@@ -1,4 +1,5 @@
-import { HTMLContetnt } from "./skill-contents/html-content";
+import HTMLContetnt from "./skill-contents/html-content";
+import TypeScriptContetnt from "./skill-contents/typescript-content";
 
 export const SKILLS = [
   {
@@ -17,6 +18,7 @@ export const SKILLS = [
   {
     id: 3,
     title: "Typescript",
+    content: <TypeScriptContetnt />
   },
   {
     id: 5,
