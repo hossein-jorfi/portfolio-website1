@@ -10,7 +10,10 @@ const TypeScriptContetnt = () => {
         <ElemEqual>=</ElemEqual> <ElemString>"Hossein"</ElemString>
       </p>
       <p>
-        <ErrorUnderLine>name</ErrorUnderLine> = 10
+        <ErrorUnderLine>
+          <ElemVarName>name</ElemVarName>
+        </ErrorUnderLine>{" "}
+        <ElemEqual>=</ElemEqual> <ElemNumber>10</ElemNumber>
       </p>
     </div>
   );
@@ -20,8 +23,8 @@ export default TypeScriptContetnt;
 
 const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
   const [showTooltip, setShowTooltip] = useState(false);
-//   let name = "hossein";
-//   name = 10;
+  //   let name = "hossein";
+  //   name = 10;
   return (
     <span className="relative w-fit">
       <span className="z-10">{children}</span>
