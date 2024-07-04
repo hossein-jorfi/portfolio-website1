@@ -1,3 +1,6 @@
+// styles
+import styles from './typescript-content.module.scss'
+
 // import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
@@ -35,6 +38,7 @@ export default TypeScriptContetnt;
 const ErrorUnderLine = ({ children }: { children: ReactNode }) => (
   <span className="relative w-fit">
     <span>{children}</span>
-    <span className="w-full h-[2px] bg-red-700 absolute left-0 -bottom-1" />
+    {/* <span className="w-full h-[2px] bg-red-700 absolute left-0 -bottom-1" /> */}
+    <span className={`absolute left-0 -bottom-1 ${styles.zigzag}`} />
   </span>
 );
