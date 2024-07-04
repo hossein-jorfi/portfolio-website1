@@ -34,7 +34,8 @@ const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
           onMouseLeave={() => setShowTooltip(false)}
           className="w-44 border-2 rounded-xl p-2 absolute left-0 top-10 bg-[#191f2b] text-xl"
         >
-          Type 'number' is not assignable to type 'string' .ts(2322)
+          Type 'number' is not assignable to type 'string'{" "}
+          <span className="text-gray-600">.ts(2322)</span>
         </span>
       )}
     </span>
