@@ -3,20 +3,26 @@ import { ReactNode, useState } from "react";
 import styles from "./typescript-content.module.scss";
 
 // components
-import { ElemEqual, ElemNumber, ElemString, ElemVarLet, ElemVarName } from "../../../components/editor-elemnts";
+import {
+  ElemBlue,
+  ElemYellow,
+  ElemGreen,
+  ElemPupule,
+  ElemRed,
+} from "../../../components/editor-elemnts";
 
 const TypeScriptContetnt = () => {
   return (
     <div className="text-2xl">
       <p>
-        <ElemVarLet>let</ElemVarLet> <ElemVarName>name</ElemVarName>{" "}
-        <ElemEqual>=</ElemEqual> <ElemString>"Hossein"</ElemString> ;
+        <ElemPupule>let</ElemPupule> <ElemRed>name</ElemRed>{" "}
+        <ElemBlue>=</ElemBlue> <ElemGreen>"Hossein"</ElemGreen> ;
       </p>
       <p>
         <ErrorUnderLine>
-          <ElemVarName>name</ElemVarName>
+          <ElemRed>name</ElemRed>
         </ErrorUnderLine>{" "}
-        <ElemEqual>=</ElemEqual> <ElemNumber>10</ElemNumber> ;
+        <ElemBlue>=</ElemBlue> <ElemYellow>10</ElemYellow> ;
       </p>
     </div>
   );

@@ -1,5 +1,6 @@
 import HTMLContetnt from "./skill-contents/html-content";
 import TypeScriptContetnt from "./skill-contents/typescript-content";
+import CssContent from "./skill-contents/css-content";
 
 export const SKILLS = [
   {
@@ -10,6 +11,7 @@ export const SKILLS = [
   {
     id: 1,
     title: "CSS",
+    content: <CssContent />
   },
   {
     id: 2,

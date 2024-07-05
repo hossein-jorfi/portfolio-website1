@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { ElemVarName, ElemWhite } from "../../../components/editor-elemnts";
+import { ElemRed, ElemWhite } from "../../../components/editor-elemnts";
 
 const HTMLContetnt = () => {
   return (
     <div className="text-3xl">
       <div>
         <ElemWhite>{"<"}</ElemWhite>
-        <ElemVarName>div</ElemVarName>
+        <ElemRed>div</ElemRed>
         <ElemWhite>{">"}</ElemWhite>
       </div>
       <div className="ml-5"> 
@@ -23,9 +23,9 @@ const HTMLContetnt = () => {
             {el === "<" ? (
               <ElemWhite>{el}</ElemWhite>
             ) : el === "h" ? (
-              <ElemVarName>{el}</ElemVarName>
+              <ElemRed>{el}</ElemRed>
             ) : el === "1" ? (
-              <ElemVarName>{el}</ElemVarName>
+              <ElemRed>{el}</ElemRed>
             ) : el === ">" ? (
               <ElemWhite>{el}</ElemWhite>
             ) : el === "/" ? (
@@ -39,7 +39,7 @@ const HTMLContetnt = () => {
       <div>
         <ElemWhite>{"<"}</ElemWhite>
         <ElemWhite>/</ElemWhite>
-        <ElemVarName>div</ElemVarName>
+        <ElemRed>div</ElemRed>
         <ElemWhite>{">"}</ElemWhite>
       </div>
     </div>
