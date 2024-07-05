@@ -1,12 +1,17 @@
 // components
-
-import { ElemYellow } from "../../../components/editor-elemnts";
+import { ElemWhite, ElemYellow } from "../../../components/editor-elemnts";
 
 const CssContent = () => {
   return (
-    <div>
+    <div className="text-xl">
       <div>
-            <ElemYellow>.test</ElemYellow> 
+        <ElemYellow>.container {"{"}</ElemYellow>
+      </div>
+      <div className="ml-5">
+        <ElemWhite>display: flex;</ElemWhite>
+      </div>
+      <div>
+        <ElemYellow>{"}"}</ElemYellow>
       </div>
     </div>
   );
