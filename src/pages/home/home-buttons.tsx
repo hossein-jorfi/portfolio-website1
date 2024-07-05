@@ -13,7 +13,7 @@ const HomeButtons = () => {
         <ButtonType1>Skills</ButtonType1>
       </Link>
       <ButtonType1>About</ButtonType1>
-      <ButtonType1>Exprereince</ButtonType1>
+      <ButtonType1>Experience</ButtonType1>
     </div>
   );
 };
