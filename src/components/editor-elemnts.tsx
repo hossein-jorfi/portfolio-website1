@@ -15,3 +15,6 @@ export const ElemString = ({ children }: { children: ReactNode }) => (
 export const ElemNumber = ({ children }: { children: ReactNode }) => (
   <span className="text-orange-300">{children}</span>
 );
+export const ElemWhite = ({ children }: { children: ReactNode }) => (
+  <span className="text-primary">{children}</span>
+);

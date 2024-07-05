@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import { ElemVarName, ElemWhite } from "../../../components/editor-elemnts";
 
 const HTMLContetnt = () =>
   "<h1>Hello World</h1>".split("").map((el, i) => (
@@ -14,26 +14,19 @@ const HTMLContetnt = () =>
       className="text-3xl"
     >
       {el === "<" ? (
-        <Elem1>{el}</Elem1>
+        <ElemWhite>{el}</ElemWhite>
       ) : el === "h" ? (
-        <Elem2>{el}</Elem2>
+        <ElemVarName>{el}</ElemVarName>
       ) : el === "1" ? (
-        <Elem2>{el}</Elem2>
+        <ElemVarName>{el}</ElemVarName>
       ) : el === ">" ? (
-        <Elem1>{el}</Elem1>
+        <ElemWhite>{el}</ElemWhite>
       ) : el === "/" ? (
-        <Elem1>{el}</Elem1>
+        <ElemWhite>{el}</ElemWhite>
       ) : (
-        <Elem1>{el}</Elem1>
+        <ElemWhite>{el}</ElemWhite>
       )}
     </motion.span>
   ));
 
 export default HTMLContetnt;
-
-const Elem1 = ({ children }: { children: ReactNode }) => (
-  <span className="text-primary">{children}</span>
-);
-const Elem2 = ({ children }: { children: ReactNode }) => (
-  <span className="text-red-400">{children}</span>
-);

@@ -1,9 +1,9 @@
 import { ReactNode, useState } from "react";
 // styles
 import styles from "./typescript-content.module.scss";
-import { ElemEqual, ElemNumber, ElemString, ElemVarLet, ElemVarName } from "../../../components/editor-elemnts";
 
 // components
+import { ElemEqual, ElemNumber, ElemString, ElemVarLet, ElemVarName } from "../../../components/editor-elemnts";
 
 const TypeScriptContetnt = () => {
   return (
