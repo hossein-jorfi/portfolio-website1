@@ -4,11 +4,13 @@ import { SKILLS } from "./contants";
 // components
 import Container from "../../components/container";
 import Skill from "./skill";
+import MenuItems from "../../components/menu-items";
 
 const Skills = () => {
   return (
     <Container scrollTarget="skills">
       <div className="flex flex-col w-full gap-5">
+        <MenuItems />
         <div className="w-full ">
           <p className="title">Skills</p>
         </div>
