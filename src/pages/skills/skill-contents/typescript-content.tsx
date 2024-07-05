@@ -1,6 +1,9 @@
 import { ReactNode, useState } from "react";
 // styles
 import styles from "./typescript-content.module.scss";
+import { ElemEqual, ElemNumber, ElemString, ElemVarLet, ElemVarName } from "../../../components/editor-elemnts";
+
+// components
 
 const TypeScriptContetnt = () => {
   return (
@@ -49,19 +52,3 @@ const ErrorUnderLine = ({ children }: { children: ReactNode }) => {
     </span>
   );
 };
-
-const ElemVarName = ({ children }: { children: ReactNode }) => (
-  <span className="text-red-400">{children}</span>
-);
-const ElemVarLet = ({ children }: { children: ReactNode }) => (
-  <span className="text-[#c678dd]">{children}</span>
-);
-const ElemEqual = ({ children }: { children: ReactNode }) => (
-  <span className="text-[rgb(91,236,255)]">{children}</span>
-);
-const ElemString = ({ children }: { children: ReactNode }) => (
-  <span className="text-[#affa79]">{children}</span>
-);
-const ElemNumber = ({ children }: { children: ReactNode }) => (
-  <span className="text-orange-300">{children}</span>
-);
