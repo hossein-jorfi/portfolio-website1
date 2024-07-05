@@ -9,7 +9,17 @@ const CssContent = () => {
       </div>
       <div className="ml-5">
         <ElemWhite>
-          display: <ElemYellow>flex</ElemYellow>;
+          display: <ElemYellow>flex</ElemYellow> ;
+        </ElemWhite>
+      </div>
+      <div className="ml-5">
+        <ElemWhite>
+        justify-content: <ElemYellow>center</ElemYellow> ;
+        </ElemWhite>
+      </div>
+      <div className="ml-5">
+        <ElemWhite>
+        align-items: <ElemYellow>center</ElemYellow> ;
         </ElemWhite>
       </div>
       <div>
