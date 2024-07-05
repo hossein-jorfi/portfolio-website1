@@ -1,6 +1,6 @@
 $height: 12px;
 $halfheight: (
-  $height/2
+  calc($height / 2)
 );
 $thickness: 110%; // increase to make the line thicker
 $offset: 4px;
