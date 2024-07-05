@@ -13,7 +13,7 @@ export const ElemGreen = ({ children }: { children: ReactNode }) => (
   <span className="text-[#affa79]">{children}</span>
 );
 export const ElemYellow = ({ children }: { children: ReactNode }) => (
-  <span className="text-orange-300">{children}</span>
+  <span className="text-[#ffb169]">{children}</span>
 );
 export const ElemWhite = ({ children }: { children: ReactNode }) => (
   <span className="text-primary">{children}</span>

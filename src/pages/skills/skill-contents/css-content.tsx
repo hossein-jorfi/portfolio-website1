@@ -8,7 +8,9 @@ const CssContent = () => {
         <ElemYellow>.container {"{"}</ElemYellow>
       </div>
       <div className="ml-5">
-        <ElemWhite>display: flex;</ElemWhite>
+        <ElemWhite>
+          display: <ElemYellow>flex</ElemYellow>;
+        </ElemWhite>
       </div>
       <div>
         <ElemYellow>{"}"}</ElemYellow>
