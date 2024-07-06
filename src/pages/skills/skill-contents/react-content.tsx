@@ -31,7 +31,10 @@ export default ReactContent;
 const Box = ({ id }: { id: string }) => {
   return (
     <>
-      <div id={id} className="w-16 h-8 border-2 border-sky-300 rounded-lg flex justify-center items-center">
+      <div
+        id={id}
+        className="w-16 h-8 border-2 border-sky-300 rounded-sm flex justify-center items-center"
+      >
         {id}
       </div>
     </>
@@ -46,9 +49,9 @@ const Line = ({ start, end }: { start: string; end: string }) => {
       color={"rgb(125 211 252)"}
       showHead={false}
       strokeWidth={2}
-      startAnchor='bottom'
-      endAnchor='top'
-      path="smooth"
+      startAnchor="bottom"
+      endAnchor="top"
+      path="grid"
     />
   );
 };
