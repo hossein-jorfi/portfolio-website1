@@ -28,8 +28,11 @@ const ServerBox = () => (
 
 const Page = () => (
   <PageSection className="w-full h-40 flex gap-2">
-    <PageSection className="w-1/3 h-full border-2 rounded-sm">
+    <PageSection className="w-1/3 h-full border-2 rounded-sm flex flex-col gap-2">
       <Spinner />
+        <div className="w-full h-full bg-white rounded-sm" />
+        <div className="w-full h-full bg-white rounded-sm" />
+        <div className="w-full h-full bg-white rounded-sm" />
     </PageSection>
     <PageSection className="w-2/3 h-full border-2 rounded-sm flex flex-col justify-between">
       <div className="flex flex-col gap-2">
