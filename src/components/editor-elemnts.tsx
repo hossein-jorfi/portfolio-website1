@@ -12,6 +12,9 @@ export const ElemBlue = ({ children }: { children: ReactNode }) => (
 export const ElemMethod = ({ children }: { children: ReactNode }) => (
   <span className="text-[#5ab5ff]">{children}</span>
 );
+export const ElemMethod2 = ({ children }: { children: ReactNode }) => (
+  <span className="text-[#5ac3d1]">{children}</span>
+);
 export const ElemGreen = ({ children }: { children: ReactNode }) => (
   <span className="text-[#affa79]">{children}</span>
 );
