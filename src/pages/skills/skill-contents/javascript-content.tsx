@@ -29,7 +29,15 @@ const JavascriptContent = () => {
           <ElemWhite> , </ElemWhite> <ElemPupule>{"{ }"}</ElemPupule>{" "}
           <ElemYellow>)</ElemYellow>
         </div>
-        <div>const res = JSON.stringify(req)</div>
+        <div>
+          <ElemPupule>const</ElemPupule> <ElemVarYellow>res</ElemVarYellow>{" "}
+          <ElemBlue>=</ElemBlue> <ElemVarYellow>JSON</ElemVarYellow>
+          <ElemWhite>.</ElemWhite>
+          <ElemMethod>stringify</ElemMethod>
+          <ElemYellow>(</ElemYellow>
+          <ElemVarYellow>req</ElemVarYellow>
+          <ElemYellow>)</ElemYellow>
+        </div>
       </div>
     </div>
   );
