@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 // assets
 import ServerShape from "../../../assets/common/server.svg?react";
+import Spinner from "../../../components/spinner";
 
 // utils
 // import Xarrow from "react-xarrows";
@@ -33,6 +34,9 @@ const Page = () => (
       <div className="w-full h-1 bg-white" />
       <div className="w-full h-1 bg-white" />
       <div className="w-full h-1 bg-white" />
+      <div className="flex justify-center mt-3">
+        <Spinner />
+      </div>
     </PageSection>
   </PageSection>
 );
