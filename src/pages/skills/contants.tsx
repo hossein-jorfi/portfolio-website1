@@ -2,6 +2,7 @@ import HTMLContetnt from "./skill-contents/html-content";
 import TypeScriptContetnt from "./skill-contents/typescript-content";
 import CssContent from "./skill-contents/css-content";
 import JavascriptContent from "./skill-contents/javascript-content";
+import ReactContent from "./skill-contents/react-content";
 
 export const SKILLS = [
   {
@@ -27,6 +28,7 @@ export const SKILLS = [
   {
     id: 5,
     title: "React.js",
+    content: <ReactContent />,
   },
   {
     id: 6,
