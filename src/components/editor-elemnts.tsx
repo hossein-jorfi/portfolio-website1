@@ -9,11 +9,17 @@ export const ElemPupule = ({ children }: { children: ReactNode }) => (
 export const ElemBlue = ({ children }: { children: ReactNode }) => (
   <span className="text-[rgb(91,236,255)]">{children}</span>
 );
+export const ElemMethod = ({ children }: { children: ReactNode }) => (
+  <span className="text-[#5ab5ff]">{children}</span>
+);
 export const ElemGreen = ({ children }: { children: ReactNode }) => (
   <span className="text-[#affa79]">{children}</span>
 );
 export const ElemYellow = ({ children }: { children: ReactNode }) => (
   <span className="text-[#ffb169]">{children}</span>
+);
+export const ElemVarYellow = ({ children }: { children: ReactNode }) => (
+  <span className="text-[#e5c07b]">{children}</span>
 );
 export const ElemWhite = ({ children }: { children: ReactNode }) => (
   <span className="text-primary">{children}</span>
