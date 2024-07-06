@@ -3,6 +3,7 @@ import TypeScriptContetnt from "./skill-contents/typescript-content";
 import CssContent from "./skill-contents/css-content";
 import JavascriptContent from "./skill-contents/javascript-content";
 import ReactContent from "./skill-contents/react-content";
+import NextContent from "./skill-contents/next-content";
 
 export const SKILLS = [
   {
@@ -33,5 +34,6 @@ export const SKILLS = [
   {
     id: 6,
     title: "Next.js",
+    content: <NextContent />,
   },
 ];
