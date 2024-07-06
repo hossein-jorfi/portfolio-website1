@@ -4,16 +4,20 @@ import ServerShape from "../../../assets/common/server.svg?react";
 import Spinner from "../../../components/spinner";
 
 // utils
-// import Xarrow from "react-xarrows";
+import Xarrow, { Xwrapper } from "react-xarrows";
 
 // components
 
 const NextContent = () => {
   return (
-    <div className="flex gap-14">
-      <ServerBox />
-      <Page />
-    </div>
+    <Xwrapper>
+      <div className="flex gap-14">
+        <ServerBox />
+        <Page />
+      </div>
+
+      <Line start="server" end="page" />
+    </Xwrapper>
   );
 };
 
@@ -21,18 +25,17 @@ export default NextContent;
 
 const ServerBox = () => (
   <div>
-    {/* <div className="w-8 h-16 border-2" /> */}
-    <ServerShape width={50} height={50} />
+    <ServerShape id="server" width={50} height={50} />
   </div>
 );
 
 const Page = () => (
-  <PageSection className="w-full h-40 flex gap-2">
+  <PageSection id="page" className="w-full h-40 flex gap-2">
     <PageSection className="w-1/3 h-full border-2 rounded-sm flex flex-col gap-2">
       <Spinner />
-        <div className="w-full h-full bg-white rounded-sm" />
-        <div className="w-full h-full bg-white rounded-sm" />
-        <div className="w-full h-full bg-white rounded-sm" />
+      <div className="w-full h-full bg-white rounded-sm" />
+      <div className="w-full h-full bg-white rounded-sm" />
+      <div className="w-full h-full bg-white rounded-sm" />
     </PageSection>
     <PageSection className="w-2/3 h-full border-2 rounded-sm flex flex-col justify-between">
       <div className="flex flex-col gap-2">
@@ -55,26 +58,30 @@ const Page = () => (
 const PageSection = ({
   className,
   children,
+  id,
 }: {
   className: string;
+  id?: string;
   children?: ReactNode;
 }) => {
   return (
-    <div className={`border-2 rounded-lg p-2 ${className}`}>{children}</div>
+    <div id={id} className={`border-2 rounded-lg p-2 ${className}`}>
+      {children}
+    </div>
   );
 };
 
-// const Line = ({ start, end }: { start: string; end: string }) => {
-//   return (
-//     <Xarrow
-//       start={start}
-//       end={end}
-//       color={"rgb(125 211 252)"}
-//       showHead={false}
-//       strokeWidth={2}
-//       startAnchor="bottom"
-//       endAnchor="top"
-//       path="grid"
-//     />
-//   );
-// };
+const Line = ({ start, end }: { start: string; end: string }) => {
+  return (
+    <Xarrow
+      start={start}
+      end={end}
+      color={"#fff"}
+      // showHead={false}
+      strokeWidth={2}
+      startAnchor="right"
+      endAnchor="left"
+      path="smooth"
+    />
+  );
+};
