@@ -5,6 +5,7 @@ import JavascriptContent from "./skill-contents/javascript-content";
 import ReactContent from "./skill-contents/react-content";
 import NextContent from "./skill-contents/next-content";
 import GitContent from "./skill-contents/git-content";
+import WebsocketContent from "./skill-contents/websocket-content";
 
 export const SKILLS = [
   {
@@ -41,5 +42,10 @@ export const SKILLS = [
     id: 7,
     title: "Git & Github",
     content: <GitContent />
+  },
+  {
+    id: 8,
+    title: "Web Socket",
+    content: <WebsocketContent />
   },
 ];
