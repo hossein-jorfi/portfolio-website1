@@ -36,4 +36,8 @@ export const SKILLS = [
     title: "Next.js",
     content: <NextContent />,
   },
+  {
+    id: 7,
+    title: "Git & Github",
+  },
 ];
