@@ -4,6 +4,7 @@ import CssContent from "./skill-contents/css-content";
 import JavascriptContent from "./skill-contents/javascript-content";
 import ReactContent from "./skill-contents/react-content";
 import NextContent from "./skill-contents/next-content";
+import GitContent from "./skill-contents/git-content";
 
 export const SKILLS = [
   {
@@ -39,5 +40,6 @@ export const SKILLS = [
   {
     id: 7,
     title: "Git & Github",
+    content: <GitContent />
   },
 ];
