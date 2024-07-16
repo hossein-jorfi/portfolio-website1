@@ -8,7 +8,7 @@ import MenuItems from "../../components/menu-items";
 
 const Skills = () => {
   return (
-    <Container scrollTarget="skills">
+    <Container>
       <div className="flex flex-col w-full gap-5">
         <MenuItems />
         {/* <div className="w-full ">

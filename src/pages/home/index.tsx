@@ -6,7 +6,7 @@ import Container from "../../components/container";
 const Home = () => {
   return (
     <Container>
-      <div className="flex flex-col justify-center gap-6 h-full">
+      <div className="flex flex-col justify-center gap-6 h-[calc(100vh-100px)]">
         <SocialMedia />
         <Title />
         <HomeButtons />
