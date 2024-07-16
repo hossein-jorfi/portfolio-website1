@@ -1,22 +1,10 @@
-import {
-  ElemYellow,
-  ElemBlue,
-  ElemGreen,
-} from "../../../components/editor-elemnts";
+// assets
+import GitBranchIcon from "../../../assets/skills/git-branch.svg";
 
 const GitContent = () => {
   return (
-    <div className="text-xl">
-      <p>
-        <ElemYellow>git add</ElemYellow> <ElemBlue>.</ElemBlue>
-      </p>
-      <p>
-        <ElemYellow>git commit</ElemYellow> <ElemBlue>-m</ElemBlue>{" "}
-        <ElemGreen>"idk"</ElemGreen>
-      </p>
-      <p>
-        <ElemYellow>git push</ElemYellow>
-      </p>
+    <div className="flex justify-center items-center">
+      <img src={GitBranchIcon} className="w-2/3" />
     </div>
   );
 };
