@@ -21,7 +21,7 @@ const ButtonType1 = ({
         // borderRadius: "100%",
       }}
       onClick={onClick}
-      className={`border-2 p-3 rounded-2xl text-primary text-lg ${className}`}
+      className={`border-2 p-3 rounded-2xl text-primary text-sm md:text-lg ${className}`}
     >
       {children}
     </motion.button>

@@ -6,7 +6,7 @@ import ButtonType1 from "../../components/button-type1";
 
 const HomeButtons = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-2 md:gap-4">
       <ButtonType1>Download CV</ButtonType1>
       <DividerLine />
       <Link to="skills">
