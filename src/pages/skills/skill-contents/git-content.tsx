@@ -1,9 +1,22 @@
+import {
+  ElemYellow,
+  ElemBlue,
+  ElemGreen,
+} from "../../../components/editor-elemnts";
+
 const GitContent = () => {
   return (
     <div className="text-xl">
-      <p>git add .</p>
-      <p>git commit -m "idk"</p>
-      <p>git push</p>
+      <p>
+        <ElemYellow>git add</ElemYellow> <ElemBlue>.</ElemBlue>
+      </p>
+      <p>
+        <ElemYellow>git commit</ElemYellow> <ElemBlue>-m</ElemBlue>{" "}
+        <ElemGreen>"idk"</ElemGreen>
+      </p>
+      <p>
+        <ElemYellow>git push</ElemYellow>
+      </p>
     </div>
   );
 };
