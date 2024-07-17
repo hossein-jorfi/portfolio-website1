@@ -44,19 +44,19 @@ export const SKILLS = [
     content: <WebsocketContent />,
   },
   {
-    id: 11,
+    id: 8,
     title: "API",
   },
   {
-    id: 9,
+    id: 10,
     title: "State Managers",
   },
   {
-    id: 10,
+    id: 11,
     title: "UI Libraries",
   },
   {
-    id: 8,
+    id: 12,
     title: "Git & Github",
     content: <GitContent />,
   },
