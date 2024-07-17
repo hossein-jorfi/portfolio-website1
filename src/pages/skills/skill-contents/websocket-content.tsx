@@ -36,7 +36,9 @@ const WebsocketContent = () => {
   return (
     <div>
       <Profit value={profit} />
-      <LineChart chartData={chartData} />
+      {/* <div className="border-2"> */}
+        <LineChart chartData={chartData} />
+      {/* </div> */}
     </div>
   );
 };
