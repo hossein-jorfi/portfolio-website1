@@ -2,8 +2,6 @@ import { Area, AreaChart, XAxis } from "recharts";
 import {
   ChartConfig,
   ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
   { month: "January", price: 186, resistance: 80 },
@@ -43,7 +41,6 @@ export function LineChart() {
           tickMargin={8}
           tickFormatter={(value) => value.slice(0, 3)}
         />
-        <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
         <defs>
           <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
             <stop
