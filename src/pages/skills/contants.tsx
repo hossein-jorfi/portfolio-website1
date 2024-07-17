@@ -40,12 +40,24 @@ export const SKILLS = [
   },
   {
     id: 7,
-    title: "Git & Github",
-    content: <GitContent />
+    title: "Web Socket",
+    content: <WebsocketContent />,
+  },
+  {
+    id: 11,
+    title: "API",
+  },
+  {
+    id: 9,
+    title: "State Managers",
+  },
+  {
+    id: 10,
+    title: "UI Libraries",
   },
   {
     id: 8,
-    title: "Web Socket",
-    content: <WebsocketContent />
+    title: "Git & Github",
+    content: <GitContent />,
   },
 ];
