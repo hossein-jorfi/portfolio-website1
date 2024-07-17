@@ -7,6 +7,7 @@ import NextContent from "./skill-contents/next-content";
 import GitContent from "./skill-contents/git-content";
 import WebsocketContent from "./skill-contents/websocket-content";
 import ApiContent from "./skill-contents/api-content";
+import StateManagersContent from "./skill-contents/state-managers-content";
 
 export const SKILLS = [
   {
@@ -52,6 +53,7 @@ export const SKILLS = [
   {
     id: 10,
     title: "State Managers",
+    content: <StateManagersContent />
   },
   {
     id: 11,
