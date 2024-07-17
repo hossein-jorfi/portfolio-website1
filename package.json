@@ -15,11 +15,13 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
+    "lucide-react": "^0.408.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.4",
     "react-router-dom": "^6.24.0",
     "react-xarrows": "^2.0.2",
+    "recharts": "^2.12.7",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "vite-plugin-checker": "^0.6.4"
