@@ -6,6 +6,7 @@ import ReactContent from "./skill-contents/react-content";
 import NextContent from "./skill-contents/next-content";
 import GitContent from "./skill-contents/git-content";
 import WebsocketContent from "./skill-contents/websocket-content";
+import ApiContent from "./skill-contents/api-content";
 
 export const SKILLS = [
   {
@@ -46,6 +47,7 @@ export const SKILLS = [
   {
     id: 8,
     title: "API",
+    content: <ApiContent />
   },
   {
     id: 10,
