@@ -52,7 +52,7 @@ const Profit = ({ value }: { value: number }) => {
         }`}
       >
         {value >= 0 ? "+" : null}
-        {value}%
+        {value?.toFixed(2)}%
       </p>
     </>
   );
