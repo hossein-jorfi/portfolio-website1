@@ -8,6 +8,7 @@ import GitContent from "./skill-contents/git-content";
 import WebsocketContent from "./skill-contents/websocket-content";
 import ApiContent from "./skill-contents/api-content";
 import StateManagersContent from "./skill-contents/state-managers-content";
+import UiLibContent from "./skill-contents/ui-lib-content";
 
 export const SKILLS = [
   {
@@ -58,6 +59,7 @@ export const SKILLS = [
   {
     id: 11,
     title: "UI Libraries",
+    content: <UiLibContent />
   },
   {
     id: 12,
