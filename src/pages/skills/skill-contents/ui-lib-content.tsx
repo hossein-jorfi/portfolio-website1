@@ -1,16 +1,27 @@
 import { ReactNode } from "react";
 
 // assets
-import TailwindLogo from '../../../assets/skills/ui_lib/Tailwind.svg'
+import TailwindLogo from "../../../assets/skills/ui_lib/Tailwind.svg";
+import MUILogo from "../../../assets/skills/ui_lib/MUI.svg";
+import ShadcnLogo from "../../../assets/skills/ui_lib/Shadcn.svg";
+import BootstrapLogo from "../../../assets/skills/ui_lib/Bootstrap.svg";
 
 const UiLibContent = () => {
   return (
-    <div>
-      <div className="flex gap-8 h-full justify-center items-center mt-5">
+    <div className="flex flex-col gap-3">
+      <div className="flex gap-8 justify-center items-baseline">
         <ItemContainer
           icon={<img src={TailwindLogo} width={40} />}
           title="Tailwind"
         />
+        <ItemContainer icon={<img src={MUILogo} width={40} />} title="MUI" />
+      </div>
+      <div className="flex gap-8 justify-center items-baseline">
+        <ItemContainer
+          icon={<img src={ShadcnLogo} width={40} />}
+          title="Tailwind"
+        />
+        <ItemContainer icon={<img src={BootstrapLogo} width={40} />} title="No good" />
       </div>
     </div>
   );
