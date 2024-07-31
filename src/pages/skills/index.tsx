@@ -9,7 +9,7 @@ import MenuItems from "../../components/menu-items";
 const Skills = () => {
   return (
     <Container>
-      <div className="flex flex-col w-full gap-5">
+      <div className="flex items-center flex-col w-full gap-5">
         <MenuItems />
         {/* <div className="w-full ">
           <p className="title">Skills</p>
