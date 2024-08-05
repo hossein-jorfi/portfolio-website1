@@ -1,6 +1,6 @@
 const ExperienceItem = () => {
   return (
-    <div className="mt-8 ml-4 flex gap-4">
+    <div className="mt-8 ml-4 flex gap-10">
       <TimeLine />
       <div>
         <p className="text-5xl font-bold">Maroon Moshaver Arjan</p>
@@ -14,9 +14,9 @@ export default ExperienceItem;
 
 const TimeLine = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2 items-center">
       <Circle value="2023" />
-      <div>line</div>
+      <div className="w-[1px] h-[60px] bg-primary"></div>
       <Circle value="now" />
     </div>
   );
