@@ -15,11 +15,15 @@ export default ExperienceItem;
 const TimeLine = () => {
   return (
     <div className="flex flex-col">
-      <Circle />
-      <div> line</div>
-      <Circle />
+      <Circle value="2023" />
+      <div>line</div>
+      <Circle value="now" />
     </div>
   );
 };
 
-const Circle = () => <div className="border-2 rounded-full">test</div>;
+const Circle = ({ value }: { value: string }) => (
+  <div className="border-2 rounded-[50%] text-xs w-11 h-11 flex justify-center items-center">
+    {value}
+  </div>
+);
