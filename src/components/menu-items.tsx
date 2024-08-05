@@ -10,11 +10,13 @@ const MENU_ITEMS = [
 ];
 const MenuItems = () => {
   return (
-    <div className="text-primary text-2xl flex gap-5 ml-3">
-      {MENU_ITEMS.map((item) => (
-        <MenuItem key={item.id} {...item} />
-      ))}
-    </div>
+    
+      <div className="text-primary text-2xl flex gap-5 ml-3 w-full">
+        {MENU_ITEMS.map((item) => (
+          <MenuItem key={item.id} {...item} />
+        ))}
+      </div>
+    
   );
 };
 
