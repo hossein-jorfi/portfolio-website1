@@ -19,7 +19,7 @@ const UiLibContent = () => {
       <div className="flex gap-8 justify-center items-baseline">
         <ItemContainer
           icon={<img src={ShadcnLogo} width={40} />}
-          title="Tailwind"
+          title="Shadcn"
         />
         <ItemContainer icon={<img src={BootstrapLogo} width={40} />} title="No good" />
       </div>
