@@ -7,8 +7,8 @@ const HomeButtons = () => {
       <ButtonType1>Download CV</ButtonType1>
       <DividerLine />
       <ButtonType1 to="skills">Skills</ButtonType1>
-      <ButtonType1>About</ButtonType1>
-      <ButtonType1>Experience</ButtonType1>
+      <ButtonType1 to="experience">Experience</ButtonType1>
+      <ButtonType1 to="about">About</ButtonType1>
     </div>
   );
 };
