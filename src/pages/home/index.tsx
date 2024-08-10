@@ -23,7 +23,7 @@ const Title = () => (
     // whileInView={{ opacity: 1 }}
     className="title"
   >
-    {"Hello Im Hossein".split("").map((el, i) => (
+    {"Hossein Jorfi".split("").map((el, i) => (
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
