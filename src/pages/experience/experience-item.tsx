@@ -36,7 +36,9 @@ const TimeLine = () => {
 };
 
 const Circle = ({ value }: { value: string }) => (
-  <div className="border-2 rounded-[50%] text-xs w-11 h-[88px] flex justify-center items-center">
-    {value}
+  <div className="w-full h-fit">
+    <div className="border-2 rounded-[50%] text-xs w-11 h-11 flex justify-center items-center">
+      {value}
+    </div>
   </div>
 );
