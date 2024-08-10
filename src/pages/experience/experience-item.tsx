@@ -1,6 +1,6 @@
 const ExperienceItem = () => {
   return (
-    <div className="mt-8 ml-4 flex gap-10">
+    <div className="mt-8 ml-4 flex flex-col md:flex-row gap-3 md:gap-10">
       <TimeLine />
       <div>
         <p className="text-5xl font-bold">Maroon Moshaver Arjan</p>
@@ -27,16 +27,16 @@ export default ExperienceItem;
 
 const TimeLine = () => {
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <div className="flex w-full md:w-fit justify-between flex-row md:flex-col gap-2 items-center">
       <Circle value="2023" />
-      <div className="w-[1px] h-[100%] bg-primary"></div>
+      <div className="w-full h-[1px] md:w-[1px] md:h-full bg-primary"></div>
       <Circle value="now" />
     </div>
   );
 };
 
 const Circle = ({ value }: { value: string }) => (
-  <div className="w-full h-fit">
+  <div className="w-fit h-fit">
     <div className="border-2 rounded-[50%] text-xs w-11 h-11 flex justify-center items-center">
       {value}
     </div>
