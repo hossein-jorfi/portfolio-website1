@@ -5,6 +5,19 @@ const ExperienceItem = () => {
       <div>
         <p className="text-5xl font-bold">Maroon Moshaver Arjan</p>
         <p className="text-4xl font-bold">React Developer</p>
+        <p className="w-full mt-2 text-xl font-medium">
+          The website I worked on with this team was a "crypto trading
+          platform", and I was responsible for the app logic. This included
+          handling all routing, API calls, authorization, and real-time features
+          such as websockets or Pusher events and other features.
+        </p>
+        <div className="flex gap-2 items-center">
+          <span className="w-[3px] h-[3px] rounded-full bg-primary"></span>
+          <p className="text-sm font-medium">
+            Routing - API - WebSocket - State Management(Redux & Context) -
+            Performance Optimization
+          </p>
+        </div>
       </div>
     </div>
   );
