@@ -3,11 +3,16 @@ import Home from "../pages/home";
 import Skills from "../pages/skills";
 import About from "../pages/about";
 import Experience from "../pages/experience";
+import MainLayout from "../layout";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Outlet />,
+    element: (
+      <MainLayout>
+        <Outlet />
+      </MainLayout>
+    ),
     children: [
       {
         index: true,
