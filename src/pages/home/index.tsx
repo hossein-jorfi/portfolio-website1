@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
 import HomeButtons from "./home-buttons";
 import SocialMedia from "./social-media";
-import Container from "../../components/container";
 
 const Home = () => {
   return (
-    <Container>
+    <div className="flex justify-center">
       <div className="flex flex-col justify-center gap-6 h-[calc(100vh-100px)]">
         <SocialMedia />
         <Title />
         <HomeButtons />
       </div>
-    </Container>
+    </div>
   );
 };
 
