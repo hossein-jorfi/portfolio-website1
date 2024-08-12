@@ -6,10 +6,7 @@ const ExperienceItem = () => {
         <p className="text-5xl font-bold">Maroon Moshaver Arjan</p>
         <p className="text-4xl font-bold">React Developer</p>
         <p className="w-full mt-2 text-xl">
-          The website I worked on with this team was a "crypto trading
-          platform", and I was responsible for the app logic. This included
-          handling all routing, API calls, authorization, and real-time features
-          such as websockets or Pusher events and other features.
+        The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.
         </p>
         <div className="flex gap-2 items-center mt-1">
           <span className="w-[3px] h-[3px] rounded-full bg-primary"></span>
