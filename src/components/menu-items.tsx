@@ -10,13 +10,16 @@ const MENU_ITEMS = [
 ];
 const MenuItems = () => {
   return (
-    
-      <div className="text-primary text-2xl flex gap-5 ml-3 w-full">
+    <div className="text-primary">
+      <div className="text-2xl sm:flex gap-5 ml-3 w-full hidden ">
         {MENU_ITEMS.map((item) => (
           <MenuItem key={item.id} {...item} />
         ))}
       </div>
-    
+      <div className="flex sm:hidden justify-end">
+        Menu
+      </div>
+    </div>
   );
 };
 
