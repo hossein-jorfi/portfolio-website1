@@ -11,11 +11,11 @@ const Skills = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
         {SKILLS.map((skill, index) => (
           <motion.span
-            initial={{ opacity: 0, }}
-            animate={{ opacity: 1, }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{
               duration: 0.25,
-              delay: index / 10,
+              delay: (index + 1) / 5,
             }}
             key={skill.id}
             className="text-primary border-2 p-4 rounded-2xl"
