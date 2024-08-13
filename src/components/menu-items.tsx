@@ -16,9 +16,7 @@ const MenuItems = () => {
           <MenuItem key={item.id} {...item} />
         ))}
       </div>
-      <div className="flex sm:hidden justify-end">
-        Menu
-      </div>
+      <MobilleMenu />
     </div>
   );
 };
@@ -55,4 +53,8 @@ const MenuItem = ({
       </Link>
     </motion.span>
   );
+};
+
+const MobilleMenu = () => {
+  return <div className="flex sm:hidden justify-end">Menu</div>;
 };
