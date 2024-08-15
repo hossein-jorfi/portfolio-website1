@@ -7,7 +7,9 @@ const MobilleMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openHandler = () => {
     setIsOpen(true);
-    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      document.body.style.overflow = "hidden";
+    }, 200);
   };
   const closeHandler = () => {
     setIsOpen(false);
@@ -18,11 +20,15 @@ const MobilleMenu = () => {
     <div className="flex sm:hidden justify-end">
       <p onClick={openHandler}>Menu</p>
       {isOpen && (
-        <div className="w-full h-full absolute top-0 right-0 bg-slate-600 flex flex-col items-center">
+        <motion.div
+          className="w-full h-full absolute top-0 bg-slate-600 flex flex-col items-center"
+          initial={{ right: "100vh" }}
+          animate={{ right: "0" }}
+        >
           {MENU_ITEMS.map((item) => (
             <MenuItem onClose={closeHandler} key={item.id} {...item} />
           ))}
-        </div>
+        </motion.div>
       )}
     </div>
   );
@@ -49,11 +55,7 @@ const MenuItem = ({
       transition={{ duration: 0.5 }}
       className="relative w-full h-full text-7xl flex justify-center items-center z-[10000]"
     >
-      <Link
-        onClick={onClose}
-        className={`${className}`}
-        to={to}
-      >
+      <Link onClick={onClose} className={`${className}`} to={to}>
         {title}
         <motion.span
           initial={{ opacity: 0, x: -100 }}
