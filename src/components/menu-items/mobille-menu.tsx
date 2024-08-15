@@ -13,7 +13,7 @@ const MobilleMenu = () => {
   };
   const closeHandler = () => {
     setIsOpen(false);
-    document.body.style.overflow = "scroll";
+    document.body.style.overflow = "auto";
   };
 
   return (

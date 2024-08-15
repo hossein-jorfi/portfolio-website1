@@ -11,7 +11,7 @@ const praggraph3 =
 
 const About = () => {
   return (
-    <div className="p-3 text-2xl font-medium flex flex-col gap-6 text-primary mt-10">
+    <div className="p-3 text-2xl font-medium flex flex-col gap-6 text-primary sm:mt-8">
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
