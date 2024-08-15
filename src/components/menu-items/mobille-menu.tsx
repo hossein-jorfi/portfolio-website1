@@ -18,7 +18,9 @@ const MobilleMenu = () => {
 
   return (
     <div className="flex sm:hidden justify-end">
-      <p onClick={openHandler}>Menu</p>
+      <div onClick={openHandler}>
+        <MenuIcon />
+      </div>
       {isOpen && (
         <motion.div
           className="w-full h-full absolute top-0 bg-[#0D0D0E] flex flex-col items-center"
@@ -69,3 +71,26 @@ const MenuItem = ({
     </motion.span>
   );
 };
+
+const MenuIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={25}
+    height={25}
+    viewBox="0 0 256 256"
+  >
+    <path
+      fill="#e2e8f0"
+      strokeMiterlimit={10}
+      d="M5 8a2 2 0 1 0 0 4h40a2 2 0 1 0 0-4zm0 15a2 2 0 1 0 0 4h40a2 2 0 1 0 0-4zm0 15a2 2 0 1 0 0 4h40a2 2 0 1 0 0-4z"
+      fontFamily="none"
+      fontSize="none"
+      fontWeight="none"
+      style={{
+        mixBlendMode: "normal",
+      }}
+      textAnchor="none"
+      transform="scale(5.12)"
+    />
+  </svg>
+);
