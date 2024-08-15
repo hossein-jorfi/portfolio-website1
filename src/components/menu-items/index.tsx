@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-// components
 import { Link, useLocation } from "react-router-dom";
+import MobilleMenu from "./mobille-menu";
 
 const MENU_ITEMS = [
   { id: 0, title: "Home", to: "/" },
@@ -53,8 +53,4 @@ const MenuItem = ({
       </Link>
     </motion.span>
   );
-};
-
-const MobilleMenu = () => {
-  return <div className="flex sm:hidden justify-end">Menu</div>;
 };
