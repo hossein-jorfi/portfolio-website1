@@ -15,8 +15,25 @@ const ButtonType1 = ({
   className,
   to,
 }: ButtonType1Props) => {
-  return (
-    <Link to={to || "#"}>
+  if (to) {
+    return (
+      <Link to={to}>
+        <motion.button
+          whileHover={{ paddingRight: "30px", paddingLeft: "30px" }}
+          whileTap={{
+            scale: 0.8,
+            // rotate: -90,
+            // borderRadius: "100%",
+          }}
+          onClick={onClick}
+          className={`border-2 p-3 w-full rounded-2xl text-primary text-sm md:text-lg ${className}`}
+        >
+          {children}
+        </motion.button>
+      </Link>
+    );
+  } else {
+    return (
       <motion.button
         whileHover={{ paddingRight: "30px", paddingLeft: "30px" }}
         whileTap={{
@@ -29,8 +46,8 @@ const ButtonType1 = ({
       >
         {children}
       </motion.button>
-    </Link>
-  );
+    );
+  }
 };
 
 export default ButtonType1;
