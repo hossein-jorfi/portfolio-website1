@@ -9,7 +9,7 @@ const MobilleMenu = () => {
     setIsOpen(true);
     setTimeout(() => {
       document.body.style.overflow = "hidden";
-    }, 200);
+    }, 250);
   };
   const closeHandler = () => {
     setIsOpen(false);
@@ -21,7 +21,7 @@ const MobilleMenu = () => {
       <p onClick={openHandler}>Menu</p>
       {isOpen && (
         <motion.div
-          className="w-full h-full absolute top-0 bg-slate-600 flex flex-col items-center"
+          className="w-full h-full absolute top-0 bg-[#0D0D0E] flex flex-col items-center"
           initial={{ right: "100vh" }}
           animate={{ right: "0" }}
         >
@@ -52,7 +52,7 @@ const MenuItem = ({
     <motion.span
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
       className="relative w-full h-full text-7xl flex justify-center items-center z-[10000]"
     >
       <Link onClick={onClose} className={`${className}`} to={to}>
