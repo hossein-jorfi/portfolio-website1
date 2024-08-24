@@ -38,9 +38,17 @@ const Images = () => {
 export default Images;
 
 const ImageItem = ({ src }: { src: string }) => {
+  const imageClickHandler = () => {
+      console.log('first')
+      const elem = document.createElement('a')
+      elem?.setAttribute('href', src);
+      elem?.setAttribute('target', '_blank');
+      elem.click()
+  };
+
   return (
     <CarouselItem className="md:basis-1/2">
-      <img src={src} alt="screenshot" />
+      <img src={src} alt="screenshot" onClick={imageClickHandler} className="cursor-pointer" />
     </CarouselItem>
   );
 };
