@@ -39,7 +39,6 @@ export default Images;
 
 const ImageItem = ({ src }: { src: string }) => {
   const imageClickHandler = () => {
-      console.log('first')
       const elem = document.createElement('a')
       elem?.setAttribute('href', src);
       elem?.setAttribute('target', '_blank');
