@@ -15,8 +15,13 @@ import Login from "@/assets/botlyzer/bot_login.png";
 
 const Images = () => {
   return (
-    <div>
-      <Carousel className="w-full max-w-xs">
+    <div className="p-10">
+      <Carousel
+        className="w-full"
+        opts={{
+          align: "start",
+        }}
+      >
         <CarouselContent>
           <ImageItem src={Landing1} />
           <ImageItem src={Autotrading} />
@@ -34,7 +39,7 @@ export default Images;
 
 const ImageItem = ({ src }: { src: string }) => {
   return (
-    <CarouselItem>
+    <CarouselItem className="md:basis-1/2">
       <img src={src} alt="screenshot" />
     </CarouselItem>
   );
