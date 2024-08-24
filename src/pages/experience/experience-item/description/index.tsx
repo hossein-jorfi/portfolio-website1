@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+import TimeLine from "./timeline";
 
-const ExperienceItem = () => {
+const index = () => {
   return (
     <div className="mt-8 ml-4 flex flex-col md:flex-row gap-3 md:gap-10">
       <TimeLine />
@@ -62,22 +63,4 @@ const ExperienceItem = () => {
   );
 };
 
-export default ExperienceItem;
-
-const TimeLine = () => {
-  return (
-    <div className="flex w-full md:w-fit justify-between flex-row md:flex-col gap-2 items-center">
-      <Circle value="2023" />
-      <div className="w-full h-[1px] md:w-[1px] md:h-full bg-primary"></div>
-      <Circle value="now" />
-    </div>
-  );
-};
-
-const Circle = ({ value }: { value: string }) => (
-  <div className="w-fit h-fit">
-    <div className="border-2 rounded-[50%] text-xs w-11 h-11 flex justify-center items-center">
-      {value}
-    </div>
-  </div>
-);
+export default index;
