@@ -1,7 +1,7 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import TimeLine from "./timeline";
 
-const index = () => {
+const Description = () => {
   return (
     <div className="mt-8 ml-4 flex flex-col md:flex-row gap-3 md:gap-10">
       <TimeLine />
@@ -63,4 +63,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Description;
