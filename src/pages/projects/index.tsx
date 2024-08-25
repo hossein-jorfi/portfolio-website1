@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 // assets
 import NextDash from "@/assets/projects/next-dash.png";
 import Landing from "@/assets/projects/landing.png";
@@ -27,8 +29,18 @@ const PROJECTS = [
 const Projects = () => {
   return (
     <div className="text-primary px-3 space-y-10 mt-5">
-      {PROJECTS.map((project) => (
-        <ProjectCard {...project} key={project.id} />
+      {PROJECTS.map((project, index) => (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.25,
+            delay: (index + 1) / 2,
+          }}
+          key={project.id}
+        >
+          <ProjectCard {...project} />
+        </motion.div>
       ))}
     </div>
   );
