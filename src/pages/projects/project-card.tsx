@@ -25,7 +25,10 @@ const ProjectCard = ({
         <img src={image} alt={title} className="rounded-md" />
       </div>
       <div className="w-full md:w-[60%] flex flex-col gap-4 justify-between items-start">
-        <div className="text-primary/890">{text}</div>
+        <div className="space-y-2">
+          <p className="text-xl">{title}</p>
+          <p className="text-primary/90">{text}</p>
+        </div>
         <div className="flex items-start gap-6">
           <a href={liveLink} target="_blank">
             <Button
