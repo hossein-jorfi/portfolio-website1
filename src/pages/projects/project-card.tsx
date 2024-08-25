@@ -1,34 +1,25 @@
 type ProjectCardProps = {
   image: string;
+  title: string;
   text: string;
   liveLink: string;
   gitHubLink: string;
 };
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  text,
+  image,
+  gitHubLink,
+  liveLink,
+  title,
+}: ProjectCardProps) => {
+  console.log(gitHubLink, liveLink);
   return (
     <div className="flex gap-4">
-      <div className="border rounded-xl w-1/3 h-auto flex justify-center items-center">
-        image
+      <div className="border-2 p-1 rounded-xl w-[40%] h-auto flex justify-center items-center">
+        <img src={image} alt={title} className="rounded-md" />
       </div>
-      <div className="w-2/3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni in
-        quod repudiandae doloribus expedita totam reiciendis voluptate iure a
-        voluptatibus aspernatur officia architecto, error omnis, nostrum ipsam
-        distinctio eveniet?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni in
-        quod repudiandae doloribus expedita totam reiciendis voluptate iure a
-        voluptatibus aspernatur officia architecto, error omnis, nostrum ipsam
-        distinctio eveniet?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni in
-        quod repudiandae doloribus expedita totam reiciendis voluptate iure a
-        voluptatibus aspernatur officia architecto, error omnis, nostrum ipsam
-        distinctio eveniet?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni in
-        quod repudiandae doloribus expedita totam reiciendis voluptate iure a
-        voluptatibus aspernatur officia architecto, error omnis, nostrum ipsam
-        distinctio eveniet?
-      </div>
+      <div className="w-[60%]">{text}</div>
     </div>
   );
 };
