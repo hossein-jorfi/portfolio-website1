@@ -20,11 +20,11 @@ const ProjectCard = ({
   title,
 }: ProjectCardProps) => {
   return (
-    <div className="flex gap-4 border-2 border-primary/50 rounded-3xl p-4">
-      <div className="border-2 border-primary/50 p-3 rounded-xl w-[40%] h-auto flex justify-center items-center">
+    <div className="flex flex-col md:flex-row gap-4 border-2 border-primary/50 rounded-3xl p-4">
+      <div className="border-2 border-primary/50 p-3 rounded-xl w-full md:w-[40%] h-auto flex justify-center items-center">
         <img src={image} alt={title} className="rounded-md" />
       </div>
-      <div className="w-[60%] flex flex-col justify-between items-start">
+      <div className="w-full md:w-[60%] flex flex-col gap-4 justify-between items-start">
         <div className="text-primary/890">{text}</div>
         <div className="flex items-start gap-6">
           <a href={liveLink} target="_blank">
