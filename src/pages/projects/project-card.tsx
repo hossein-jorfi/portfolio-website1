@@ -20,8 +20,8 @@ const ProjectCard = ({
   title,
 }: ProjectCardProps) => {
   return (
-    <div className="flex gap-4">
-      <div className="border-2 p-3 rounded-xl w-[40%] h-auto flex justify-center items-center">
+    <div className="flex gap-4 border-2 border-primary/50 rounded-3xl p-4">
+      <div className="border-2 border-primary/50 p-3 rounded-xl w-[40%] h-auto flex justify-center items-center">
         <img src={image} alt={title} className="rounded-md" />
       </div>
       <div className="w-[60%] flex flex-col justify-between items-start">
@@ -30,7 +30,7 @@ const ProjectCard = ({
           <a href={liveLink} target="_blank">
             <Button
               variant="link"
-              className="px-0 flex items-center gap-1.5 text-primary/60 hover:text-primary/90"
+              className="px-0 flex items-center gap-1.5 text-primary/70 hover:text-primary/90"
             >
               Visit Website <ExternalLinkIcon />
             </Button>
@@ -38,7 +38,7 @@ const ProjectCard = ({
           <a href={gitHubLink} target="_blank">
             <Button
               variant="link"
-              className="px-0 flex items-center gap-1.5 text-primary/60 hover:text-primary/90"
+              className="px-0 flex items-center gap-1.5 text-primary/70 hover:text-primary/90"
             >
               See on GitHub <GitHubLogoIcon />
             </Button>

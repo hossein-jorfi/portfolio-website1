@@ -15,6 +15,7 @@ const Projects = () => {
         liveLink=""
         gitHubLink=""
       />
+      {/* <div className="w-full h-[1px] bg-primary/40" /> */}
       <ProjectCard
         image={Landing}
         title="Next.js Dashboard"
