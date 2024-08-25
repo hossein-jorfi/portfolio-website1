@@ -36,5 +36,6 @@ const Title = () => (
         {el}
       </motion.span>
     ))}
+    <p className="text-base sm:text-xl md:text-4xl md:ml-1 text-primary/70">Front End Developer</p>
   </motion.p>
 );
