@@ -4,11 +4,11 @@
 
 @layer components {
   .main_bg {
-    @apply h-screen bg-[#b292ff] p-3;
+    @apply h-screen bg-[#b292ff] sm:p-3;
   }
 
   .main_paper {
-    @apply bg-[#0D0D0E] w-full min-h-full rounded-3xl overflow-y-hidden no-scrollbar;
+    @apply bg-[#0D0D0E] w-full min-h-full sm:rounded-3xl overflow-y-hidden no-scrollbar;
   }
 
   .title {
