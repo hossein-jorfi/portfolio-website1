@@ -18,7 +18,7 @@ const Description = () => {
         >
           Maroon Moshaver Arjan
         </motion.p>
-        <div>
+        <div className="flex items-center gap-5">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
