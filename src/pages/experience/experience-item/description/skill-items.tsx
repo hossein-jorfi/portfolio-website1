@@ -1,4 +1,10 @@
 import { ReactNode } from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const ITEMS = [
   {
@@ -125,8 +131,15 @@ export default SkillItems;
 const SkillItem = ({ icon, name }: { icon: ReactNode; name: string }) => {
   console.log(name);
   return (
-    <div className="">
-      <div className="w-5 md:w-4">{icon}</div>
-    </div>
+    <TooltipProvider delayDuration={200}>
+      <Tooltip>
+        <TooltipTrigger className="w-5 md:w-4">
+          <div>{icon}</div>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p className="text-slate-900 font-bold">{name}</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 };
