@@ -112,7 +112,7 @@ const ITEMS = [
 
 const SkillItems = () => {
   return (
-    <div className="flex flex-col gap-1 justify-between h-full ml-2">
+    <div className="flex md:flex-col gap-1 md:justify-between h-full md:ml-2 mt-2 md:mt-0">
       {ITEMS.map((item) => (
         <SkillItem key={item.id} {...item} />
       ))}
@@ -126,7 +126,7 @@ const SkillItem = ({ icon, name }: { icon: ReactNode; name: string }) => {
   console.log(name);
   return (
     <div className="">
-      <div className="w-4">{icon}</div>
+      <div className="w-5 md:w-4">{icon}</div>
     </div>
   );
 };

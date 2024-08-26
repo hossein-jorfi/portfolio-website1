@@ -4,7 +4,7 @@ const TimeLine = () => {
   return (
     <div className="flex w-full md:w-fit justify-between flex-row md:flex-col gap-2 items-center">
       <Circle value="2023" />
-      <div className="w-full h-[1px] md:w-[1px] md:h-full bg-primary">
+      <div className="w-full h-[1px] md:w-[1px] md:h-full bg-primary relative">
         <SkillItems />
       </div>
       <Circle value="now" />
