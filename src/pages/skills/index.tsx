@@ -18,7 +18,7 @@ const Skills = () => {
               delay: (index + 1) / 5,
             }}
             key={skill.id}
-            className="text-primary border-2 p-4 rounded-2xl"
+            className="text-primary border-2 border-primary p-4 rounded-2xl"
           >
             <Skill key={skill.id} {...skill}>
               {skill.content}
