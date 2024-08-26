@@ -111,7 +111,13 @@ const ITEMS = [
 ];
 
 const SkillItems = () => {
-  return ITEMS.map((item) => <SkillItem key={item.id} {...item} />);
+  return (
+    <div className="flex flex-col gap-1 justify-between h-full ml-2">
+      {ITEMS.map((item) => (
+        <SkillItem key={item.id} {...item} />
+      ))}
+    </div>
+  );
 };
 
 export default SkillItems;
@@ -120,7 +126,7 @@ const SkillItem = ({ icon, name }: { icon: ReactNode; name: string }) => {
   console.log(name);
   return (
     <div className="">
-      <div className="w-7">{icon}</div>
+      <div className="w-4">{icon}</div>
     </div>
   );
 };

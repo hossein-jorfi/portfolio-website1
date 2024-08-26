@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import TimeLine from "./timeline";
-import SkillItems from "./skill-items";
 
 const Description = () => {
   return (
@@ -18,20 +17,17 @@ const Description = () => {
         >
           Maroon Moshaver Arjan
         </motion.p>
-        <div className="flex items-center gap-5">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.25,
-              delay: 0.5,
-            }}
-            className="text-4xl font-bold"
-          >
-            React Developer
-          </motion.p>
-          <SkillItems />
-        </div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.25,
+            delay: 0.5,
+          }}
+          className="text-4xl font-bold"
+        >
+          React Developer
+        </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
