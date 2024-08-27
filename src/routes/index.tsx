@@ -5,6 +5,7 @@ import Skills from "../pages/skills";
 import About from "../pages/about";
 import Experience from "../pages/experience";
 import Projects from "@/pages/projects";
+import ErrorComponent from "./error-component";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
         <Outlet />
       </MainLayout>
     ),
+    errorElement: <ErrorComponent />,
     children: [
       {
         index: true,
