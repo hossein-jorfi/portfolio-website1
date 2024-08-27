@@ -62,7 +62,6 @@ const SkillItems = () => {
 export default SkillItems;
 
 const SkillItem = ({ icon, name }: { icon: ReactNode; name: string }) => {
-  console.log(name);
   return (
     <TooltipProvider delayDuration={200}>
       <Tooltip>
