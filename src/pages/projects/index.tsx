@@ -9,6 +9,7 @@ import CSSIcon from "@/assets/skills/css.svg?react";
 import TSIcon from "@/assets/skills/typescript.svg?react";
 import TailwindIcon from "@/assets/skills/ui_lib/Tailwind.svg?react";
 import ShadcnIcon from "@/assets/skills/ui_lib/Shadcn.svg";
+import NextIcon from "@/assets/skills/next.svg?react";
 
 // components
 import ProjectCard from "./project-card";
@@ -26,6 +27,7 @@ const PROJECTS = [
       <CSSIcon />,
       <TSIcon />,
       <ReactIcon />,
+      <NextIcon />,
       <TailwindIcon />,
       <img src={ShadcnIcon} alt="shadcn" />,
     ],
@@ -37,6 +39,7 @@ const PROJECTS = [
     text: "This project involves the creation of a straightforward landing page that does not incorporate any data fetching or complex tasks. The primary objective is to practice styling and ensuring responsiveness in web pages. For this Project, I utilized React and Tailwind CSS.",
     liveLink: "https://landing-page-neon-five.vercel.app",
     gitHubLink: "https://github.com/hossein-jorfi/landing-page",
+    skills: [<HTMLIcon />, <CSSIcon />, <ReactIcon />, <TailwindIcon />],
   },
 ];
 
