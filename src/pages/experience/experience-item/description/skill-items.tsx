@@ -51,7 +51,7 @@ const ITEMS = [
 
 const SkillItems = () => {
   return (
-    <div className="flex md:flex-col gap-1 md:justify-between h-full md:ml-2 mt-2 md:mt-0">
+    <div className="flex md:flex-col gap-1 md:justify-between h-full md:ml-2 mt-4 md:mt-0 items-center md:items-start ">
       {ITEMS.map((item) => (
         <SkillItem key={item.id} {...item} />
       ))}
