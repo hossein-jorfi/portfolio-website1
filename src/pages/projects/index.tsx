@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 // assets
 import NextDash from "@/assets/projects/next-dash.png";
 import Landing from "@/assets/projects/landing.png";
+import ReactIcon from "@/assets/skills/react.svg?react";
+import HTMLIcon from "@/assets/skills/html.svg?react";
+import CSSIcon from "@/assets/skills/css.svg?react";
+import TSIcon from "@/assets/skills/typescript.svg?react";
+import TailwindIcon from "@/assets/skills/ui_lib/Tailwind.svg?react";
+import ShadcnIcon from "@/assets/skills/ui_lib/Shadcn.svg";
 
 // components
 import ProjectCard from "./project-card";
@@ -15,6 +21,14 @@ const PROJECTS = [
     text: "This is the dashboard from the official Next.js website course, which covers significant topics and features of Next.js, such as the various types of server-side rendering applicable in different scenarios, authorization, authentication, navigation, and more. Upon completing the course, I enhanced the aesthetics of the dashboard by utilizing Shadcn UI and developed loading skeletons for the components.",
     liveLink: "https://nextjs-dashboard-hossein.vercel.app",
     gitHubLink: "https://github.com/hossein-jorfi/nextjs-dashboard",
+    skills: [
+      <HTMLIcon />,
+      <CSSIcon />,
+      <TSIcon />,
+      <ReactIcon />,
+      <TailwindIcon />,
+      <img src={ShadcnIcon} alt="shadcn" />,
+    ],
   },
   {
     id: 1,

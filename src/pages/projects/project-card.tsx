@@ -3,6 +3,7 @@ import { GitHubLogoIcon, ExternalLinkIcon } from "@radix-ui/react-icons";
 
 // components
 import { Button } from "@/components/ui/button";
+import { ReactNode } from "react";
 
 type ProjectCardProps = {
   image: string;
@@ -10,6 +11,7 @@ type ProjectCardProps = {
   text: string;
   liveLink: string;
   gitHubLink: string;
+  skills?: ReactNode[];
 };
 
 const ProjectCard = ({
@@ -18,6 +20,7 @@ const ProjectCard = ({
   gitHubLink,
   liveLink,
   title,
+  skills,
 }: ProjectCardProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-4 border-2 border-primary/50 rounded-3xl p-4">
@@ -28,6 +31,11 @@ const ProjectCard = ({
         <div className="space-y-2">
           <p className="text-xl">{title}</p>
           <p className="text-primary/90">{text}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          {skills?.map((skill, index) => (
+            <div key={index} className="w-6">{skill}</div>
+          ))}
         </div>
         <div className="flex items-start gap-6">
           <a href={liveLink} target="_blank">
