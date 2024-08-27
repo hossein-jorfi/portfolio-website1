@@ -52,7 +52,7 @@ const Projects = () => {
           animate={{ opacity: 1 }}
           transition={{
             duration: 0.25,
-            delay: (index + 1) / 2,
+            delay: (index + 0.5) / 3,
           }}
           key={project.id}
         >
