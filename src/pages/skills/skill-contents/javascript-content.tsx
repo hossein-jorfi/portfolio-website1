@@ -33,7 +33,7 @@ const JavascriptContent = () => {
           <ElemPupule>const</ElemPupule> <ElemVarYellow>res</ElemVarYellow>{" "}
           <ElemBlue>=</ElemBlue> <ElemVarYellow>JSON</ElemVarYellow>
           <ElemWhite>.</ElemWhite>
-          <ElemMethod>stringify</ElemMethod>
+          <ElemMethod>parse</ElemMethod>
           <ElemYellow>(</ElemYellow>
           <ElemVarYellow>req</ElemVarYellow>
           <ElemYellow>)</ElemYellow>
