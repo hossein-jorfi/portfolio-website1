@@ -41,6 +41,10 @@ export const SKILLS = [
     content: <WebsocketContent />,
   },
   {
+    title: "TradingView Advanced Chart",
+    content: <TradingviewContent />,
+  },
+  {
     title: "API",
     content: <ApiContent />,
   },
@@ -55,9 +59,5 @@ export const SKILLS = [
   {
     title: "Git & Github",
     content: <GitContent />,
-  },
-  {
-    title: "TradingView Advanced Chart",
-    content: <TradingviewContent />,
-  },
+  }
 ];
