@@ -17,10 +17,10 @@ const Skills = () => {
               duration: 0.25,
               delay: (index + 1) / 5,
             }}
-            key={skill.id}
+            key={index}
             className="text-primary border-2 border-primary p-4 rounded-2xl"
           >
-            <Skill key={skill.id} {...skill}>
+            <Skill key={index} {...skill}>
               {skill.content}
             </Skill>
           </motion.span>

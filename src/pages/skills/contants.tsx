@@ -12,57 +12,46 @@ import UiLibContent from "./skill-contents/ui-lib-content";
 
 export const SKILLS = [
   {
-    id: 0,
     title: "HTML",
     content: <HTMLContetnt />,
   },
   {
-    id: 1,
     title: "CSS",
     content: <CssContent />,
   },
   {
-    id: 2,
     title: "Javascript",
     content: <JavascriptContent />,
   },
   {
-    id: 3,
     title: "Typescript",
     content: <TypeScriptContetnt />,
   },
   {
-    id: 5,
     title: "React.js",
     content: <ReactContent />,
   },
   {
-    id: 6,
     title: "Next.js",
     content: <NextContent />,
   },
   {
-    id: 7,
     title: "Web Socket",
     content: <WebsocketContent />,
   },
   {
-    id: 8,
     title: "API",
-    content: <ApiContent />
+    content: <ApiContent />,
   },
   {
-    id: 10,
     title: "State Managers",
-    content: <StateManagersContent />
+    content: <StateManagersContent />,
   },
   {
-    id: 11,
     title: "UI Libraries",
-    content: <UiLibContent />
+    content: <UiLibContent />,
   },
   {
-    id: 12,
     title: "Git & Github",
     content: <GitContent />,
   },
