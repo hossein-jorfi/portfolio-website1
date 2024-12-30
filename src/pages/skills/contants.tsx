@@ -9,6 +9,7 @@ import WebsocketContent from "./skill-contents/websocket-content";
 import ApiContent from "./skill-contents/api-content";
 import StateManagersContent from "./skill-contents/state-managers-content";
 import UiLibContent from "./skill-contents/ui-lib-content";
+import TradingviewContent from "./skill-contents/tradingview-content";
 
 export const SKILLS = [
   {
@@ -54,5 +55,9 @@ export const SKILLS = [
   {
     title: "Git & Github",
     content: <GitContent />,
+  },
+  {
+    title: "TradingView Advanced Chart",
+    content: <TradingviewContent />,
   },
 ];
