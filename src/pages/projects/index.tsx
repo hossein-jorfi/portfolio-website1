@@ -10,6 +10,7 @@ import TSIcon from "@/assets/skills/typescript.svg?react";
 import TailwindIcon from "@/assets/skills/ui_lib/Tailwind.svg?react";
 import ShadcnIcon from "@/assets/skills/ui_lib/Shadcn.svg";
 import NextIcon from "@/assets/skills/next.svg?react";
+import ReactQueryIcon from "@/assets/skills/api/react-query-logo.png";
 
 // components
 import ProjectCard from "./project-card";
@@ -19,16 +20,16 @@ const PROJECTS = [
     image: NextDash,
     title: "Json Placeholder UI",
     text: "This project is using the jsonplaceholder.typicode.com fake API. The point is how you can manage server data in UI with React-Query (Tanstack-Query). If you open a page, data that belongs to that page will be cached. If you leave the page and come back, instead of loading, you will see cached data. It will remain until new data replaces it (if the data has changed).",
-    liveLink: "https://nextjs-dashboard-hossein.vercel.app",
-    gitHubLink: "https://github.com/hossein-jorfi/nextjs-dashboard",
+    liveLink: "https://jorfi-jsonplaceholder.vercel.app/",
+    gitHubLink: "https://github.com/hossein-jorfi/json-placeholder",
     skills: [
       <HTMLIcon />,
       <CSSIcon />,
       <TSIcon />,
-      <ReactIcon />,
-      <NextIcon />,
-      <TailwindIcon />,
       <img src={ShadcnIcon} alt="shadcn" />,
+      <TailwindIcon />,
+      <ReactIcon />,
+      <img src={ReactQueryIcon} alt="shadcn" />,
     ],
   },
   {
