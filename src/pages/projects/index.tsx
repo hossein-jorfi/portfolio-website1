@@ -16,7 +16,6 @@ import ProjectCard from "./project-card";
 
 const PROJECTS = [
   {
-    id: 0,
     image: NextDash,
     title: "Next.js Dashboard",
     text: "This is the dashboard from the official Next.js website course, which covers significant topics and features of Next.js, such as the various types of server-side rendering applicable in different scenarios, authorization, authentication, navigation, and more. Upon completing the course, I enhanced the aesthetics of the dashboard by utilizing Shadcn UI and developed loading skeletons for the components.",
@@ -33,7 +32,6 @@ const PROJECTS = [
     ],
   },
   {
-    id: 1,
     image: Landing,
     title: "Landing page",
     text: "This project involves the creation of a straightforward landing page that does not incorporate any data fetching or complex tasks. The primary objective is to practice styling and ensuring responsiveness in web pages. For this Project, I utilized React and Tailwind CSS.",
@@ -54,7 +52,7 @@ const Projects = () => {
             duration: 0.25,
             delay: (index + 0.5) / 3,
           }}
-          key={project.id}
+          key={index}
         >
           <ProjectCard {...project} />
         </motion.div>
