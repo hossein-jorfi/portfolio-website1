@@ -30,11 +30,29 @@ const ProjectCard = ({
       <div className="w-full md:w-[60%] flex flex-col gap-4 justify-between items-start">
         <div className="space-y-2">
           <p className="text-xl">{title}</p>
-          <p className="text-primary/90">{text}</p>
+          <p className="text-primary/90">
+            {text?.split(" ").map((i) => {
+              if (i?.includes(".com")) {
+                return (
+                  <a
+                    href={`https://${i}`}
+                    className="text-blue-500 hover:text-blue-600 hover:underline"
+                    target="_blank"
+                  >
+                    {i}{" "}
+                  </a>
+                );
+              } else {
+                return `${i} `;
+              }
+            })}
+          </p>
         </div>
         <div className="flex items-center gap-2">
           {skills?.map((skill, index) => (
-            <div key={index} className="w-6">{skill}</div>
+            <div key={index} className="w-6">
+              {skill}
+            </div>
           ))}
         </div>
         <div className="flex items-start gap-6">
