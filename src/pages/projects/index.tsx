@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 // assets
 import NextDash from "@/assets/projects/next-dash.png";
+import JsonPlaceHolder from "@/assets/projects/jsonplaceholder.png";
 import Landing from "@/assets/projects/landing.png";
 import ReactIcon from "@/assets/skills/react.svg?react";
 import HTMLIcon from "@/assets/skills/html.svg?react";
@@ -17,7 +18,7 @@ import ProjectCard from "./project-card";
 
 const PROJECTS = [
   {
-    image: NextDash,
+    image: JsonPlaceHolder,
     title: "Json Placeholder UI",
     text: "This project is using the jsonplaceholder.typicode.com fake API. The point is how you can manage server data in UI with React-Query (Tanstack-Query). If you open a page, data that belongs to that page will be cached. If you leave the page and come back, instead of loading, you will see cached data. It will remain until new data replaces it (if the data has changed).",
     liveLink: "https://jorfi-jsonplaceholder.vercel.app/",
