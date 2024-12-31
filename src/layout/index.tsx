@@ -8,7 +8,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <Container>
-      <div className="flex flex-col w-full gap-5">
+      <div className="flex flex-col w-full sm:gap-5">
         {location.pathname !== "/" && <MenuItems />}
         {children}
       </div>
