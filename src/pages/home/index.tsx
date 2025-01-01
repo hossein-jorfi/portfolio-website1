@@ -1,13 +1,21 @@
 import { motion } from "framer-motion";
 import HomeButtons from "./home-buttons";
 import SocialMedia from "./social-media";
+// import ProfileImage from "@/assets/profile.jpg";
 
 const Home = () => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col justify-center gap-6 h-[calc(100vh-100px)]">
         <SocialMedia />
-        <Title />
+        {/* <div className="flex gap-3"> */}
+          <Title />
+          {/* <img
+            src={ProfileImage}
+            alt="profile"
+            className="w-40 rounded-full border-4 border-white"
+          /> */}
+        {/* </div> */}
         <HomeButtons />
       </div>
     </div>
