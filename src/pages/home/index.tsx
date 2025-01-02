@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 import HomeButtons from "./home-buttons";
 import SocialMedia from "./social-media";
 // import ProfileImage from "@/assets/profile.jpg";
-import ReactLogo from "@/assets/react.svg?react";
+// import ReactLogo from "@/assets/react.svg?react";
+// import NextLogo from "@/assets/skills/next.svg?react";
 
 const Home = () => {
   return (
     <div className="flex justify-center relative">
-      <ReactLogo className="absolute -bottom-32 -right-32 w-[550px] h-[550px] z-10 blur" />
+      {/* <ReactLogo className="absolute -top-32 -left-32 w-[450px] h-[450px] z-10 blur" />
+      <NextLogo className="absolute -bottom-32 -right-32 w-[450px] h-[450px] z-10 blur opacity-25" /> */}
       <div className="flex flex-col justify-center gap-6 h-[calc(100vh-100px)] z-20">
         <SocialMedia />
         <Title />
