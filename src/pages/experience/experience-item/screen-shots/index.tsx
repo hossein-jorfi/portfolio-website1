@@ -10,7 +10,7 @@ const ScreenShots = () => {
       </p>
       <div className="flex items-center gap-1 text-slate-400 mt-0">
         <InfoCircledIcon />
-        <p className="text-sm">Click the photo to view it on a new page.</p>
+        <p className="text-sm">Click the photo to view it on a bigger size.</p>
       </div>
       <Images />
     </div>

@@ -6,6 +6,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 // assets
 import Landing1 from "@/assets/botlyzer/bot1.png";
@@ -38,16 +43,17 @@ const Images = () => {
 export default Images;
 
 const ImageItem = ({ src }: { src: string }) => {
-  const imageClickHandler = () => {
-      const elem = document.createElement('a')
-      elem?.setAttribute('href', src);
-      elem?.setAttribute('target', '_blank');
-      elem.click()
-  };
-
   return (
-    <CarouselItem className="md:basis-1/2">
-      <img src={src} alt="screenshot" onClick={imageClickHandler} className="cursor-pointer" />
-    </CarouselItem>
+    <Dialog>
+      <CarouselItem className="md:basis-1/2">
+        <DialogTrigger>
+          <img src={src} alt="screenshot" className="cursor-pointer" />
+        </DialogTrigger>
+      </CarouselItem>
+
+      <DialogContent>
+        <img src={src} alt="screenshot" />
+      </DialogContent>
+    </Dialog>
   );
 };
