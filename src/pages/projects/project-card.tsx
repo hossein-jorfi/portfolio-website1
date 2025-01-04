@@ -4,6 +4,7 @@ import { GitHubLogoIcon, ExternalLinkIcon } from "@radix-ui/react-icons";
 // components
 import { Button } from "@/components/ui/button";
 import { ReactNode } from "react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 type ProjectCardProps = {
   image: string;
@@ -25,7 +26,14 @@ const ProjectCard = ({
   return (
     <div className="flex flex-col md:flex-row gap-4 border-2 border-primary/50 rounded-3xl p-4">
       <div className="border-2 border-primary/50 sm:p-3 overflow-hidden rounded-xl w-full md:w-[40%] h-auto flex justify-center items-center">
-        <img src={image} alt={title} className="rounded-md" />
+        <Dialog>
+          <DialogTrigger>
+            <img src={image} alt={title} className="rounded-md" />
+          </DialogTrigger>
+          <DialogContent>
+            <img src={image} alt={title} className="mt-3" />
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="w-full md:w-[60%] flex flex-col gap-4 justify-between items-start">
         <div className="space-y-2">
