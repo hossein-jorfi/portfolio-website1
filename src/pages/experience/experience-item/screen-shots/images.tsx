@@ -52,7 +52,7 @@ const ImageItem = ({ src }: { src: string }) => {
       </CarouselItem>
 
       <DialogContent>
-        <img src={src} alt="screenshot" />
+        <img src={src} alt="screenshot" className="mt-5" />
       </DialogContent>
     </Dialog>
   );
