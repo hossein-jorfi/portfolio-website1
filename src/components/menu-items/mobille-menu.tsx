@@ -23,15 +23,20 @@ const MobilleMenu = () => {
         <MenuIcon />
       </div>
       {isOpen && (
-        <motion.div
-          className="w-scree h-[100dvh] absolute top-0 left-0 bg-slate-950 bg-opacity-90 backdrop-blur-lg flex flex-col gap-1 items-center overflow-auto z-50"
-          initial={{ right: "100vh" }}
-          animate={{ right: "0" }}
-        >
-          {MENU_ITEMS.map((item) => (
-            <MenuItem onClose={closeHandler} key={item.id} {...item} />
-          ))}
-        </motion.div>
+        <>
+          <motion.div
+            className="w-scree h-[100dvh] absolute top-0 left-0 bg-slate-950 bg-opacity-90 backdrop-blur-lg flex flex-col gap-1 items-center overflow-auto z-10"
+            initial={{ right: "100vh" }}
+            animate={{ right: "0" }}
+          >
+            {MENU_ITEMS.map((item) => (
+              <MenuItem onClose={closeHandler} key={item.id} {...item} />
+            ))}
+          </motion.div>
+          <p className="absolute top-0 right-0 z-20" onClick={closeHandler}>
+            Close
+          </p>
+        </>
       )}
     </div>
   );
@@ -58,7 +63,11 @@ const MenuItem = ({
       transition={{ duration: 1 }}
       className="relative w-full h-full text-7xl flex justify-center items-center z-[10000]"
     >
-      <Link onClick={onClose} className={`${className} relative w-full text-center`} to={to}>
+      <Link
+        onClick={onClose}
+        className={`${className} relative w-full text-center`}
+        to={to}
+      >
         {title}
         <motion.span
           initial={{ opacity: 0, x: -100 }}
