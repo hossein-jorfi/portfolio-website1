@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { MENU_ITEMS } from "./contants";
 import { Link, useLocation } from "react-router-dom";
+import { Cross2Icon } from "@radix-ui/react-icons";
+import { Button } from "@/components/ui/button";
 
 const MobilleMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +35,19 @@ const MobilleMenu = () => {
               <MenuItem onClose={closeHandler} key={item.id} {...item} />
             ))}
           </motion.div>
-          <p className="absolute top-0 right-0 z-20" onClick={closeHandler}>
-            Close
-          </p>
+          <motion.div
+            className="absolute top-3 z-20"
+            initial={{ right: "-100px" }}
+            animate={{ right: "12px" }}
+          >
+            <Button
+              className="rounded-full text-black bg-gray-300 w-8 h-8"
+              size="icon"
+              onClick={closeHandler}
+            >
+              <Cross2Icon width={20} height={20} />
+            </Button>
+          </motion.div>
         </>
       )}
     </div>
