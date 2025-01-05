@@ -31,7 +31,7 @@ const ProjectCard = ({
             <img src={image} alt={title} className="rounded-md" />
           </DialogTrigger>
           <DialogContent>
-            <img src={image} alt={title} className="mt-3" />
+            <img src={image} alt={title} />
           </DialogContent>
         </Dialog>
       </div>
