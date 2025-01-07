@@ -15,7 +15,11 @@ const icon_props = {
 };
 const SocialMedia = () => {
   return (
-    <div className="flex items-center gap-2">
+    <motion.div
+      className="flex items-center gap-2"
+      initial={{ marginBottom: "500px" }}
+      animate={{ marginBottom: "0px" }}
+    >
       <IconWrapper path="https://www.linkedin.com/in/hosseinjorfi/">
         <LinkedinIcon {...icon_props} />
       </IconWrapper>
@@ -25,7 +29,7 @@ const SocialMedia = () => {
       <IconWrapper path="https://github.com/hossein-jorfi">
         <GitHubIcon {...icon_props} width={39} height={39} />
       </IconWrapper>
-    </div>
+    </motion.div>
   );
 };
 
