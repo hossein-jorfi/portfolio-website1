@@ -25,7 +25,6 @@ const Title = () => (
   <motion.p
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    // whileInView={{ opacity: 1 }}
     className="title"
   >
     {"Hossein Jorfi".split("").map((el, i) => (

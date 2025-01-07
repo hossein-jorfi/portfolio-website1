@@ -12,7 +12,7 @@
   }
 
   .title {
-    @apply text-primary text-3xl sm:text-5xl md:text-8xl lg:text-9xl;
+    @apply text-primary font-semibold text-3xl sm:text-5xl md:text-8xl lg:text-9xl;
   }
 }
 
