@@ -1,5 +1,6 @@
 // icons
 import { GitHubLogoIcon, ExternalLinkIcon } from "@radix-ui/react-icons";
+import VitestIcon from "@/assets/skills/vitest.svg?react";
 
 // components
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ type ProjectCardProps = {
   liveLink: string;
   gitHubLink: string;
   skills?: ReactNode[];
+  haveTest?: string;
 };
 
 const ProjectCard = ({
@@ -22,6 +24,7 @@ const ProjectCard = ({
   liveLink,
   title,
   skills,
+  haveTest,
 }: ProjectCardProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-4 border-2 border-primary/50 rounded-3xl p-4">
@@ -37,8 +40,8 @@ const ProjectCard = ({
       </div>
       <div className="w-full md:w-[60%] flex flex-col gap-4 justify-between items-start">
         <div className="space-y-2">
-          <p className="text-xl">{title}</p>
-          <p className="text-primary/90">
+          <p className="text-xl font-semibold">{title}</p>
+          <p className="text-primary/90 font-semibold">
             {text?.split(" ").map((i) => {
               if (i?.includes(".com")) {
                 return (
@@ -63,6 +66,15 @@ const ProjectCard = ({
             </div>
           ))}
         </div>
+        {haveTest && (
+          <div className="flex items-center gap-2">
+            <VitestIcon className="w-7 h-7" />
+            <p className="text-primary/90 font-semibold text-sm">
+              I wrote unit tests with vitest for like post logic click here to
+              see the tests code
+            </p>
+          </div>
+        )}
         <div className="flex items-start gap-6">
           <a href={liveLink} target="_blank">
             <Button

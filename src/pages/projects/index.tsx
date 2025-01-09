@@ -32,6 +32,8 @@ const PROJECTS = [
       <ReactIcon />,
       <img src={ReactQueryIcon} alt="shadcn" />,
     ],
+    haveTest:
+      "https://github.com/hossein-jorfi/json-placeholder/blob/main/src/lib/post-utils.test.ts",
   },
   {
     image: NextDash,
