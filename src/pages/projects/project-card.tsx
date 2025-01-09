@@ -70,8 +70,15 @@ const ProjectCard = ({
           <div className="flex items-center gap-2">
             <VitestIcon className="w-7 h-7" />
             <p className="text-primary/90 font-semibold text-sm">
-              I wrote unit tests with vitest for like post logic click here to
-              see the tests code
+              I wrote unit tests with vitest for like post logic, click{" "}
+              <a
+                href={haveTest}
+                target="_blank"
+                className="text-blue-500 hover:text-blue-600 hover:underline"
+              >
+                here
+              </a>{" "}
+              to see the tests code
             </p>
           </div>
         )}
