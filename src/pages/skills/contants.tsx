@@ -10,6 +10,7 @@ import ApiContent from "./skill-contents/api-content";
 import StateManagersContent from "./skill-contents/state-managers-content";
 import UiLibContent from "./skill-contents/ui-lib-content";
 import TradingviewContent from "./skill-contents/tradingview-content";
+import UnitTestContent from "./skill-contents/unit-test-content";
 
 export const SKILLS = [
   {
@@ -55,6 +56,10 @@ export const SKILLS = [
   {
     title: "UI Libraries",
     content: <UiLibContent />,
+  },
+  {
+    title: "Unit Test",
+    content: <UnitTestContent />,
   },
   {
     title: "Git & Github",
