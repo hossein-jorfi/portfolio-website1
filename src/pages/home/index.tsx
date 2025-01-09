@@ -26,7 +26,7 @@ const Home = () => {
         }}
         className="absolute -top-20 sm:-top-32 -left-10 sm:-left-32 w-[250px]"
       >
-        <NextLogo className="sm:w-[450px] h-[250px] sm:h-[450px] z-10 blur opacity-25" />
+        <NextLogo className="sm:w-[450px] h-[250px] sm:h-[450px] z-10 blur opacity-75" />
       </motion.div>
       <div className="flex flex-col justify-center gap-6 h-[calc(100vh-100px)] z-20">
         <SocialMedia />
