@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Check, X } from "lucide-react";
 
 const UnitTestContent = () => {
@@ -21,11 +22,17 @@ type UnitTestItemProps = {
 const UnitTestItem = ({ type, count }: UnitTestItemProps) => {
   return (
     <div
-      className={`flex gap-3 ${
+      className={cn(
+        "flex gap-3",
         type === "pass" ? "text-green-500" : "text-red-500"
-      }`}
+      )}
     >
-      <div className="border-2 rounded-full p-1">
+      <div
+        className={cn(
+          "border-2 rounded-full p-1",
+          type === "pass" ? "border-green-500" : "border-red-500"
+        )}
+      >
         {type === "pass" ? (
           <Check className="w-[15px] h-[15px]" />
         ) : (
