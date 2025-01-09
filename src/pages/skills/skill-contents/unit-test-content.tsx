@@ -5,9 +5,9 @@ const UnitTestContent = () => {
   return (
     <div className="flex flex-col gap-2">
       <UnitTestItem count={1} type="pass" />
-      <UnitTestItem count={1} type="pass" />
+      <UnitTestItem count={1} type="pass" className="ml-7" />
       <UnitTestItem count={1} type="failed" />
-      <UnitTestItem count={1} type="failed" />
+      <UnitTestItem count={1} type="failed" className="ml-7" />
     </div>
   );
 };
@@ -17,14 +17,16 @@ export default UnitTestContent;
 type UnitTestItemProps = {
   type: "pass" | "failed";
   count: number;
+  className?: string;
 };
 
-const UnitTestItem = ({ type, count }: UnitTestItemProps) => {
+const UnitTestItem = ({ type, count, className }: UnitTestItemProps) => {
   return (
     <div
       className={cn(
         "flex gap-3",
-        type === "pass" ? "text-green-500" : "text-red-500"
+        type === "pass" ? "text-green-500" : "text-red-500",
+        className
       )}
     >
       <div
