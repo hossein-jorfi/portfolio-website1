@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProfileImage from "@/assets/profile.jpg";
 
 const praggraph1 =
   "Every web developer is capable of performing fundamental tasks such as retrieving product data from a server and presenting it in a list format, as well as executing all CRUD (Create, Read, Update, Delete) requests. Therefore, one may wonder why companies place such significant emphasis on hiring front-end developers. The reason lies in the fact that their responsibilities extend beyond mere data management and editing; while these functions are indeed foundational to a website, for many organizations, their website represents the most critical aspect of their brand identity. It is essential that they convey the essence of their brand through their online presence.";
@@ -12,16 +13,18 @@ const praggraph3 =
 const About = () => {
   return (
     <div className="p-3 text-2xl font-medium flex flex-col gap-6 text-primary sm:mt-8">
-      <motion.p
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
           duration: 0.25,
           delay: 0.25,
         }}
+        className="flex flex-col lg:flex-row gap-5 items-center "
       >
-        {praggraph1}
-      </motion.p>
+        <img src={ProfileImage} className="w-72 h-72 rounded-full border-8" alt="Profile" />
+        <p>{praggraph1}</p>
+      </motion.div>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
