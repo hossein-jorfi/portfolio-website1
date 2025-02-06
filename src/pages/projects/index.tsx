@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 // assets
 import NextDash from "@/assets/projects/next-dash.png";
 import JsonPlaceHolder from "@/assets/projects/jsonplaceholder.png";
+import Shop from "@/assets/projects/shop.png";
 import Landing from "@/assets/projects/landing.png";
 import ReactIcon from "@/assets/skills/react.svg?react";
 import HTMLIcon from "@/assets/skills/html.svg?react";
@@ -12,6 +13,7 @@ import TailwindIcon from "@/assets/skills/ui_lib/Tailwind.svg?react";
 import ShadcnIcon from "@/assets/skills/ui_lib/Shadcn.svg";
 import NextIcon from "@/assets/skills/next.svg?react";
 import ReactQueryIcon from "@/assets/skills/api/react-query-logo.png";
+import ZustandIcon from "@/assets/skills/state_managers/zustand.svg?react";
 
 // components
 import ProjectCard from "./project-card";
@@ -34,6 +36,24 @@ const PROJECTS = [
     ],
     haveTest:
       "https://github.com/hossein-jorfi/json-placeholder/blob/main/src/lib/post-utils.test.ts",
+  },
+  {
+    image: Shop,
+    title: "Json Placeholder UI",
+    text: "A Shop website usign fakestoreapi.com data build with Next.js and have different kinds of rendering (SSR, SSG, CSR). actions like add a product to cart is handled by zustand and cart page is handled with react query to get and cache data(CSR). the home page and shop page is static(SSG) and single product page is server side render (SSR). and with some tricks the website feels fast (top loading skeletons), and static routes feel dynamic (progress bar loading)",
+    liveLink: "https://jorfi-shop.vercel.app/",
+    gitHubLink: "https://github.com/hossein-jorfi/Shop-Next.js",
+    skills: [
+      <HTMLIcon />,
+      <CSSIcon />,
+      <TSIcon />,
+      <img src={ShadcnIcon} alt="shadcn" />,
+      <TailwindIcon />,
+      <NextIcon />,
+      <ZustandIcon />,
+      <ReactIcon />,
+      <img src={ReactQueryIcon} alt="react query" />,
+    ],
   },
   {
     image: NextDash,
