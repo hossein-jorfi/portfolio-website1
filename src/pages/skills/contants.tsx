@@ -11,6 +11,7 @@ import StateManagersContent from "./skill-contents/state-managers-content";
 import UiLibContent from "./skill-contents/ui-lib-content";
 import TradingviewContent from "./skill-contents/tradingview-content";
 import UnitTestContent from "./skill-contents/unit-test-content";
+import DockerContent from "./skill-contents/docker-content";
 
 export const SKILLS = [
   {
@@ -62,7 +63,11 @@ export const SKILLS = [
     content: <UnitTestContent />,
   },
   {
+    title: "Docker",
+    content: <DockerContent />,
+  },
+  {
     title: "Git & Github",
     content: <GitContent />,
-  }
+  },
 ];
